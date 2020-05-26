@@ -1,0 +1,7 @@
+D:\KTU-darbai\Universitie\Antri Metai\ASA\Lab2\Lab2\bin\Debug\Lab2.exe.config
+D:\KTU-darbai\Universitie\Antri Metai\ASA\Lab2\Lab2\bin\Debug\Lab2.exe
+D:\KTU-darbai\Universitie\Antri Metai\ASA\Lab2\Lab2\bin\Debug\Lab2.pdb
+D:\KTU-darbai\Universitie\Antri Metai\ASA\Lab2\Lab2\obj\Debug\Lab2.csprojAssemblyReference.cache
+D:\KTU-darbai\Universitie\Antri Metai\ASA\Lab2\Lab2\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
+D:\KTU-darbai\Universitie\Antri Metai\ASA\Lab2\Lab2\obj\Debug\Lab2.exe
+D:\KTU-darbai\Universitie\Antri Metai\ASA\Lab2\Lab2\obj\Debug\Lab2.pdb
