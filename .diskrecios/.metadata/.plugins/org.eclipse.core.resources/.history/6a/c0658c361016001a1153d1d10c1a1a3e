@@ -1,0 +1,43 @@
+package ShortestPath;
+
+import extendsFX.BaseGraphics;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import java.util.Random;
+import javafx.scene.image.Image;
+
+public class GraphGUI extends BaseGraphics{
+	
+	private void drawOlympicRings() 
+    {      
+        gc.setLineWidth(4);
+        gc.setStroke(Color.BLACK);
+        gc.strokeOval(250, 150, 100, 100);
+        gc.setStroke(Color.BLUE);
+        gc.strokeOval(140, 150, 100, 100);
+        gc.setStroke(Color.RED);
+        gc.strokeOval(360, 150, 100, 100);
+        gc.setStroke(Color.YELLOW);
+        gc.strokeOval(195, 200, 100, 100);
+        gc.setStroke(Color.GREEN);
+        gc.strokeOval(305, 200, 100, 100);
+    }
+	
+	@Override
+    public void createControls(){
+        addButton("clear", e -> clearCanvas()); 
+        addButton("all cycles", e-> drawOlympicRings());
+//        addButton("individual", e-> drawCycle());
+        addNewHBox();
+    }
+    @Override
+    public void start(Stage stage) throws Exception {
+        stage.setTitle("Trumpiausias kelias (Mykolas Paulauskas)");        
+        setCanvas(Color.WHITE, 600, 400);
+        
+        super.start(stage);
+    }       
+    public static void main(String[] args) {
+        launch(args);
+    }  
+}

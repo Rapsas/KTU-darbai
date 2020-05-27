@@ -1,0 +1,28 @@
+package ShortestPath;
+
+import extendsFX.BaseGraphics;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import java.util.Random;
+import javafx.scene.image.Image;
+
+public class GraphGUI extends BaseGraphics{
+	
+	@Override
+    public void createControls(){
+//        addButton("clear", e -> clearCanvas()); 
+//        addButton("all cycles", e-> drawGraph());
+//        addButton("individual", e-> drawCycle());
+        addNewHBox();
+    }
+    @Override
+    public void start(Stage stage) throws Exception {
+        stage.setTitle("Trumpiausias kelias (Mykolas Paulauskas)");        
+        setCanvas(Color.BLACK, 600, 400);
+        
+        super.start(stage);
+    }       
+    public static void main(String[] args) {
+        launch(args);
+    }  
+}

@@ -1,0 +1,176 @@
+package ShortestPath;
+
+import extendsFX.BaseGraphics;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.stage.Stage;
+import javafx.scene.control.TextField;
+
+public class GraphGUI extends BaseGraphics{
+	TextField tf1;
+	TextField tf2;
+	int src;
+	int dst;
+	boolean hasNegCyc;
+	double[] vertixX; //vertices X coordinates
+	double[] vertixY; //vertices y coordinates
+	Graph g;
+	int points;
+	
+	Graph generateGraph() {
+		//g = new Graph(6);
+		g = new Graph(5);
+		points = g.getV();
+
+		vertixX = new double[g.getV()];
+		vertixY = new double[g.getV()];
+		createPolygonCoordinates(points, 100, canvasW/2, canvasH/2);
+		
+//		g.addEdge(1, 2, 1);
+//		drawEdge(1, 2, 1);
+//		//g.addEdge(1, 4, 4);
+//		//drawEdge(1, 4, 4);
+//		g.addEdge(1, 6, 2);
+//		drawEdge(1, 6, 2);
+//		g.addEdge(1, 3, 1);
+//		drawEdge(1, 3, 1);
+//		g.addEdge(2, 4, 1);
+//		drawEdge(2, 4, 1);
+//		g.addEdge(2, 5, 7);
+//		drawEdge(2, 5, 7);
+//		g.addEdge(3, 4, 3);
+//		drawEdge(3, 4, 3);
+//		g.addEdge(3, 5, 4);
+//		drawEdge(3, 5, 4);
+//		g.addEdge(6, 4, 2);
+//		drawEdge(6, 4, 2);
+		
+//		g.addEdge(0+1, 1+1, -1);
+//		drawEdge(0+1, 1+1, -1);
+//		g.addEdge(0+1, 2+1, 4);
+//		drawEdge(0+1, 2+1, 4);
+//		g.addEdge(1+1, 2+1, 3);
+//		drawEdge(1+1, 2+1, 3);
+//		g.addEdge(1+1,3+1,2);
+//		drawEdge(1+1,3+1,2);
+//		g.addEdge(4,2,-1);
+//		drawEdge(4,2,-1);
+//		g.addEdge(1+1,4+1,2);
+//		drawEdge(1+1,4+1,2);
+//		g.addEdge(4,3,5);
+//		drawEdge(4,3,5);
+//		g.addEdge(5,4,-3);
+//		drawEdge(5,4,-3);
+		
+		g.addEdge(1, 2, -1);
+		g.addEdge(1, 3, 4);
+		g.addEdge(2, 3, 3);
+		g.addEdge(4, 3, 5);
+		g.addEdge(2, 4, 2);
+		g.addEdge(4, 2, -1);
+		g.addEdge(2, 5, 2);
+		g.addEdge(5, 3, -3);
+		
+		drawEdge(1, 2, -1);
+		drawEdge(1, 3, 4);
+		drawEdge(2, 3, 3);
+		drawEdge(4, 3, 5);
+		drawEdge(2, 4, 2);
+		drawEdge(4, 2, -1);
+		drawEdge(2, 5, 2);
+		drawEdge(5, 3, -3);
+		
+		drawVertices();
+
+		return g;
+	}
+	
+	private void createPolygonCoordinates(int points, double radius, double middleX, double middleY){   
+        double lineStep = 360/points;
+        for (int i = 0; i < points; i++) {
+        	vertixX[i] = middleX + radius * Math.cos(Math.toRadians(lineStep * i)-Math.PI/2);
+        	vertixY[i] = middleY + radius * Math.sin(Math.toRadians(lineStep * i)-Math.PI/2);
+        }
+    }
+	
+	void drawEdge(int source, int dest, int weight) {
+		int realSrc = source - 1;
+		int realDst = dest - 1;
+		double textCoordX = (vertixX[realSrc] + vertixX[realDst]) / 2;
+		double textCoordY = (vertixY[realSrc] + vertixY[realDst]) / 2;
+		gc.setFill(Color.BLACK);
+		gc.setStroke(Color.BLACK);
+		gc.setLineWidth(2);
+		
+		gc.strokeLine(vertixX[realSrc], vertixY[realSrc], vertixX[realDst], vertixY[realDst]);
+		gc.setStroke(Color.ORANGE);
+		gc.strokeText(Integer.toString(weight), textCoordX, textCoordY);
+	}
+	
+	void drawVertices() {
+		int r = 10;
+		
+		gc.setFill(Color.RED);
+		gc.setStroke(Color.RED);
+		for (int i = 0; i < vertixX.length; i++) {
+			gc.strokeOval(vertixX[i]-r + 3, vertixY[i]-r + 3,r, r);
+            gc.fillOval(vertixX[i]-r + 3, vertixY[i]-r + 3,r, r);
+            String a= Integer.toString(i+1);
+            gc.strokeText(a, vertixX[i]-2*r, vertixY[i]-2*r);
+		}
+	}
+	
+	void drawGraph() {
+		gc.setFont(Font.font("Arial", 20));
+		g = generateGraph();
+		drawVertices();
+	}
+	
+//	void test() {
+//		//gc.setLineWidth(25);
+//		gc.fillOval(canvasW/2, canvasH/2, 10, 10);
+//		//gc.strokeText("AA", canvasW/2, canvasH/2);
+//	}
+	
+	void drawShortestPath() {
+		src = Integer.parseInt(tf1.getText()) - 1;
+		dst = Integer.parseInt(tf2.getText()) - 1;
+		hasNegCyc = g.FindPaths(src + 1);
+		int[] prec = g.getPrec();
+		int i = dst;
+		gc.setStroke(Color.ORANGE);
+		gc.setLineWidth(3);
+		
+		if (hasNegCyc) {
+			clearCanvas();
+			gc.setLineWidth(1);
+			gc.strokeText("ERROR: Graph has negative cycles", 100, 100);
+		}
+		else
+			while(prec[i] != i) {
+				gc.strokeLine(vertixX[i], vertixY[i], vertixX[prec[i]], vertixY[prec[i]]);
+				i = prec[i];
+			}
+		
+	}
+	
+	@Override
+    public void createControls(){
+        addButton("clear", e -> clearCanvas()); 
+        addButton("Graph", e-> drawGraph());
+        addButton("Shortest Path", e-> drawShortestPath());
+        tf1 = addTextField("Source", "", 100);
+        tf2 = addTextField("Destination", "", 100);
+        addNewHBox();
+    }
+    @Override
+    public void start(Stage stage) throws Exception {
+        stage.setTitle("Trumpiausias kelias (Mykolas Paulauskas)");        
+        setCanvas(Color.WHITE, 600, 400);
+        
+        super.start(stage);
+    }       
+    public static void main(String[] args) {
+        launch(args);
+    }  
+}

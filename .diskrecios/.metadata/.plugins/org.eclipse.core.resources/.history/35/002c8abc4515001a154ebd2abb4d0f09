@@ -1,0 +1,214 @@
+
+package cycles;
+
+import extendsFX.BaseGraphics;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import java.util.Random;
+import javafx.scene.image.Image;
+
+public class CyclesGUI extends BaseGraphics {
+    private int which;
+    double[] polX;
+    double[] polY;
+    Graph g;
+ //siame metode reikia aprasyti grafa, kuri norima spresti       
+ Graph grafoGeneravimas()
+ {
+        g= new Graph(9);
+        g.addEdge(1, 7);
+        g.addEdge(1, 2);
+        g.addEdge(2, 3);
+        g.addEdge(2, 5);
+        g.addEdge(3, 4);
+        g.addEdge(3, 6);
+        g.addEdge(4, 8);
+        g.addEdge(7, 5);
+        g.addEdge(5, 6);
+        g.addEdge(6, 8);
+        g.addEdge(7, 8);
+//        g.addEdge(1, 6);
+//        g.addEdge(1, 4);
+//        g.addEdge(2, 7);
+//        g.addEdge(3, 6);
+//        g.addEdge(3, 5);
+//        g.addEdge(4, 6);
+//        g.addEdge(4, 8);
+//        g.addEdge(5, 6);
+//        g.addEdge(5, 8);
+//        g.addEdge(7, 8);
+        g.search(6);
+        return g;
+ }
+//metodas, kuris piesa GUI viduje
+    private void drawGraph() {   
+        
+        gc.setLineWidth(2);
+        
+        double middleX = canvasW / 2;
+        double middleY = canvasH / 2;    
+        double radius = 100;
+         g= grafoGeneravimas();
+        int points= g.getV()-1;
+        polX = new double[points];
+        polY = new double[points];
+        createPolygonCoordinates(points, radius, middleX, middleY); 
+        drawCycles(polX, polY, g); // pieca ciklu linijos spalvotai
+        drawPoints(); // spausdina taskuis i gui
+        //drawLinijos(polX, polY, g);
+        printCycles(g); //spausdina ciklus i console ir gui      
+    }
+    //piesa taskus
+    void drawPoints(){
+        Image pony1= new Image("images\\pony1.png");
+        Image pony2= new Image("images\\pony2.png");
+        Image pony3= new Image("images\\pony3.png");
+        Image pony4= new Image("images\\pony4.png");
+        Image pony5= new Image("images\\pony5.png");
+        Image pony6= new Image("images\\pony6.png");
+        Image[] ponies= new Image[6];
+        ponies[0]=pony1;
+        ponies[1]=pony2;
+        ponies[2]=pony3;
+        ponies[3]=pony4;
+        ponies[4]=pony5;
+        ponies[5]=pony6;
+        int r=10;
+        gc.setStroke(Color.WHITE);
+        gc.setFill(Color.WHITE);
+        gc.setLineWidth(1);
+        for (int i=0; i<polX.length;i++)
+        {
+            gc.strokeOval(polX[i]-r, polY[i]-r,r, r);
+            gc.fillOval(polX[i]-r, polY[i]-r,r, r);
+            Random random = new Random();
+            int low = 0;
+            int high = 6;
+            int result = random.nextInt(high-low) + low;
+            String a= Integer.toString(i+1);
+            //gc.drawImage(ponies[result], polX[i]-15, polY[i]-23);
+            gc.strokeText(a, polX[i]-2*r, polY[i]-2*r);
+        }
+    }
+    //piesa vienos spalvos ciklus
+    void drawLines(double[] polX, double[] polY, Graph g)
+    {
+        gc.setStroke(Color.WHITE);
+        for (int i=1; i<=polX.length;i++)
+        {
+            for (int j: g.getADJ()[i])
+            {
+                
+                gc.strokeLine(polX[i-1], polY[i-1], polX[j-1], polY[j-1]);
+            }
+        }
+    }
+    // piesa ciklus su skirtingimos spalvomis
+    void drawCycles(double[] polX, double[] polY, Graph g)
+    {
+        clearCanvas();
+        int stroke= g.getCyclesNumber()*2;
+        for (int i=1; i<= g.getCyclesNumber();i++)
+        {
+        Random randomGenerator = new Random();
+        int red = randomGenerator.nextInt(256);
+        int green = randomGenerator.nextInt(256);
+        int blue = randomGenerator.nextInt(256);
+        
+        gc.setLineWidth(stroke);
+        gc.setStroke(Color.rgb(red, green, blue));
+            for (int j=0 ;j<g.getCycles()[i].size()-1; j++)
+           {
+  
+               gc.strokeLine(polX[g.getCycles()[i].get(j)-1], polY[g.getCycles()[i].get(j)-1],
+                       polX[g.getCycles()[i].get(j+1)-1], polY[g.getCycles()[i].get(j+1)-1]);
+           }
+            stroke=stroke-2;
+        }
+    }
+    //spausdina ciklus i console ir kairiame GUI kampe
+    void printCycles(Graph g)
+    {
+        StringBuilder a= new StringBuilder();
+        for (int i=1; i< g.getCyclesNumber();i++)
+        {
+            
+            a.append("Ciklo nr " + i + ": ");
+            for (int x: g.getCycles()[i])
+            {
+                a.append(x+ " ");
+            }
+            a.append(System.lineSeparator());
+        }
+        System.out.println(a);
+        gc.setLineWidth(1);
+        gc.setStroke(Color.WHITE);
+        gc.strokeText(a.toString(), 20, 20);
+    }
+    //piesa viena cikla i GUI
+    void drawCycle()
+    {
+        clearCanvas();
+        if (which<1||which>g.getCyclesNumber()-1)
+        {
+            which=1;
+        }
+        int stroke =4;
+        Random randomGenerator = new Random();
+        int red = randomGenerator.nextInt(256);
+        int green = randomGenerator.nextInt(256);
+        int blue = randomGenerator.nextInt(256);
+        
+        gc.setLineWidth(stroke);
+        gc.setStroke(Color.rgb(red, green, blue));
+            for (int j=0 ;j<g.getCycles()[which].size()-1; j++)
+           {
+  
+               gc.strokeLine(polX[g.getCycles()[which].get(j)-1], polY[g.getCycles()[which].get(j)-1],
+                       polX[g.getCycles()[which].get(j+1)-1], polY[g.getCycles()[which].get(j+1)-1]);
+           }
+            drawPoints();
+            printCycle();
+            which++;
+    }
+    //spausdina vieno ciklo duomenis GUI
+    void printCycle()
+    {
+        StringBuilder a= new StringBuilder();
+        a.append("Ciklo nr " + which + " : ");
+        for (int x: g.getCycles()[which])
+            {
+                a.append(x+ " ");
+            }
+        gc.setLineWidth(1);
+        gc.setStroke(Color.WHITE);
+        gc.strokeText(a.toString(), 20, 20);
+    }
+    // metodas surandantis taskui padeti koordinates
+    private void createPolygonCoordinates(int points, double radius, double middleX, double middleY){   
+        double lineStep = 360/points;
+        for (int i = 0; i < points; i++) {
+            polX[i] = middleX + radius * Math.cos(Math.toRadians(lineStep * i)-Math.PI/2);
+            polY[i] = middleY + radius * Math.sin(Math.toRadians(lineStep * i)-Math.PI/2);
+        }
+    }
+    
+
+    @Override
+    public void createControls(){
+        addButton("clear", e -> clearCanvas()); 
+        addButton("all cycles", e-> drawGraph());
+        addButton("individual", e-> drawCycle());
+        addNewHBox();
+    }
+    @Override
+    public void start(Stage stage) throws Exception {
+        stage.setTitle("Ciklai (Domantas Gudonis)");        
+        setCanvas(Color.BLACK, 600, 400);
+        
+        super.start(stage);
+    }       
+    public static void main(String[] args) {
+        launch(args);
+    }    
+}
