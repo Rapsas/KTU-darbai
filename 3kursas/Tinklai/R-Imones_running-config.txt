@@ -1,0 +1,71 @@
+!
+version 12.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 1.1.1.254 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 192.168.0.1 255.255.255.252
+ ip access-group stop in
+ duplex auto
+ speed auto
+!
+!
+ip access-list extended stop
+ deny ip host 3.3.3.20 1.1.1.0 0.0.0.255
+ permit ip 2.2.2.0 0.0.0.255 host 1.1.1.10
+ deny ip any host 1.1.1.10
+ permit tcp any host 1.1.1.9 eq 80
+ deny ip any host 1.1.1.9
+ permit ip any 1.1.1.0 0.0.0.255
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+

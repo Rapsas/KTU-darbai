@@ -1,0 +1,502 @@
+[
+  {
+    "string": "leading edge",
+    "int": 50,
+    "double": 14.4229
+  },
+  {
+    "string": "workforce",
+    "int": 82,
+    "double": 2.3395
+  },
+  {
+    "string": "Face to face",
+    "int": 45,
+    "double": 62.5294
+  },
+  {
+    "string": "homogeneous",
+    "int": 100,
+    "double": 57.7829
+  },
+  {
+    "string": "leverage",
+    "int": 52,
+    "double": 74.6423
+  },
+  {
+    "string": "modular",
+    "int": 36,
+    "double": 2.9359
+  },
+  {
+    "string": "real-time",
+    "int": 30,
+    "double": 68.3381
+  },
+  {
+    "string": "Reverse-engineered",
+    "int": 44,
+    "double": 38.0235
+  },
+  {
+    "string": "Monitored",
+    "int": 26,
+    "double": 83.0389
+  },
+  {
+    "string": "high-level",
+    "int": 39,
+    "double": 56.5331
+  },
+  {
+    "string": "moratorium",
+    "int": 62,
+    "double": 29.8999
+  },
+  {
+    "string": "capability",
+    "int": 68,
+    "double": 29.127
+  },
+  {
+    "string": "Re-engineered",
+    "int": 61,
+    "double": 86.5691
+  },
+  {
+    "string": "time-frame",
+    "int": 40,
+    "double": 17.5117
+  },
+  {
+    "string": "Diverse",
+    "int": 100,
+    "double": 54.6987
+  },
+  {
+    "string": "Self-enabling",
+    "int": 56,
+    "double": 75.3359
+  },
+  {
+    "string": "scalable",
+    "int": 46,
+    "double": 12.9882
+  },
+  {
+    "string": "Persevering",
+    "int": 90,
+    "double": 21.0424
+  },
+  {
+    "string": "global",
+    "int": 60,
+    "double": 58.5735
+  },
+  {
+    "string": "Right-sized",
+    "int": 94,
+    "double": 76.0306
+  },
+  {
+    "string": "client-server",
+    "int": 82,
+    "double": 6.9098
+  },
+  {
+    "string": "Down-sized",
+    "int": 90,
+    "double": 15.6859
+  },
+  {
+    "string": "3rd generation",
+    "int": 56,
+    "double": 53.7111
+  },
+  {
+    "string": "Reverse-engineered",
+    "int": 29,
+    "double": 26.8109
+  },
+  {
+    "string": "Focused",
+    "int": 55,
+    "double": 88.7553
+  },
+  {
+    "string": "Devolved",
+    "int": 98,
+    "double": 62.2425
+  },
+  {
+    "string": "parallelism",
+    "int": 30,
+    "double": 58.25
+  },
+  {
+    "string": "local area network",
+    "int": 52,
+    "double": 96.5964
+  },
+  {
+    "string": "user-facing",
+    "int": 75,
+    "double": 46.3408
+  },
+  {
+    "string": "projection",
+    "int": 30,
+    "double": 94.3142
+  },
+  {
+    "string": "national",
+    "int": 92,
+    "double": 71.0193
+  },
+  {
+    "string": "help-desk",
+    "int": 30,
+    "double": 98.2717
+  },
+  {
+    "string": "fresh-thinking",
+    "int": 100,
+    "double": 76.0116
+  },
+  {
+    "string": "emulation",
+    "int": 40,
+    "double": 10.1661
+  },
+  {
+    "string": "Cross-group",
+    "int": 94,
+    "double": 7.0869
+  },
+  {
+    "string": "even-keeled",
+    "int": 97,
+    "double": 39.8378
+  },
+  {
+    "string": "capability",
+    "int": 31,
+    "double": 20.5997
+  },
+  {
+    "string": "web-enabled",
+    "int": 37,
+    "double": 67.4639
+  },
+  {
+    "string": "interactive",
+    "int": 92,
+    "double": 21.6929
+  },
+  {
+    "string": "discrete",
+    "int": 74,
+    "double": 30.1219
+  },
+  {
+    "string": "national",
+    "int": 81,
+    "double": 50.9177
+  },
+  {
+    "string": "clear-thinking",
+    "int": 63,
+    "double": 98.2329
+  },
+  {
+    "string": "User-centric",
+    "int": 56,
+    "double": 94.3447
+  },
+  {
+    "string": "internet solution",
+    "int": 86,
+    "double": 59.4175
+  },
+  {
+    "string": "Re-contextualized",
+    "int": 86,
+    "double": 13.4392
+  },
+  {
+    "string": "Multi-channelled",
+    "int": 77,
+    "double": 68.7666
+  },
+  {
+    "string": "Extended",
+    "int": 71,
+    "double": 49.4035
+  },
+  {
+    "string": "full-range",
+    "int": 62,
+    "double": 22.7977
+  },
+  {
+    "string": "Streamlined",
+    "int": 61,
+    "double": 32.0628
+  },
+  {
+    "string": "algorithm",
+    "int": 94,
+    "double": 63.0638
+  },
+  {
+    "string": "asymmetric",
+    "int": 37,
+    "double": 38.2884
+  },
+  {
+    "string": "hybrid",
+    "int": 37,
+    "double": 3.3056
+  },
+  {
+    "string": "zero administration",
+    "int": 36,
+    "double": 66.1317
+  },
+  {
+    "string": "attitude",
+    "int": 81,
+    "double": 45.0175
+  },
+  {
+    "string": "Operative",
+    "int": 78,
+    "double": 27.5934
+  },
+  {
+    "string": "Future-proofed",
+    "int": 40,
+    "double": 76.8087
+  },
+  {
+    "string": "fresh-thinking",
+    "int": 41,
+    "double": 52.0684
+  },
+  {
+    "string": "Self-enabling",
+    "int": 78,
+    "double": 92.8882
+  },
+  {
+    "string": "Graphical User Interface",
+    "int": 44,
+    "double": 81.8815
+  },
+  {
+    "string": "asynchronous",
+    "int": 99,
+    "double": 12.2041
+  },
+  {
+    "string": "utilisation",
+    "int": 29,
+    "double": 94.9748
+  },
+  {
+    "string": "Extended",
+    "int": 58,
+    "double": 86.5903
+  },
+  {
+    "string": "Balanced",
+    "int": 35,
+    "double": 65.7705
+  },
+  {
+    "string": "bottom-line",
+    "int": 71,
+    "double": 46.5299
+  },
+  {
+    "string": "frame",
+    "int": 55,
+    "double": 74.0169
+  },
+  {
+    "string": "global",
+    "int": 62,
+    "double": 7.5992
+  },
+  {
+    "string": "Cloned",
+    "int": 39,
+    "double": 8.9002
+  },
+  {
+    "string": "installation",
+    "int": 61,
+    "double": 69.0398
+  },
+  {
+    "string": "Stand-alone",
+    "int": 46,
+    "double": 65.4757
+  },
+  {
+    "string": "protocol",
+    "int": 100,
+    "double": 75.1553
+  },
+  {
+    "string": "Synergized",
+    "int": 43,
+    "double": 63.7966
+  },
+  {
+    "string": "heuristic",
+    "int": 39,
+    "double": 88.6892
+  },
+  {
+    "string": "Profound",
+    "int": 33,
+    "double": 92.1507
+  },
+  {
+    "string": "Ameliorated",
+    "int": 92,
+    "double": 41.2227
+  },
+  {
+    "string": "analyzing",
+    "int": 86,
+    "double": 55.8173
+  },
+  {
+    "string": "infrastructure",
+    "int": 92,
+    "double": 96.5428
+  },
+  {
+    "string": "Open-architected",
+    "int": 98,
+    "double": 33.5924
+  },
+  {
+    "string": "Enterprise-wide",
+    "int": 55,
+    "double": 49.0444
+  },
+  {
+    "string": "archive",
+    "int": 37,
+    "double": 59.4897
+  },
+  {
+    "string": "Inverse",
+    "int": 96,
+    "double": 48.9792
+  },
+  {
+    "string": "customer loyalty",
+    "int": 43,
+    "double": 82.0839
+  },
+  {
+    "string": "homogeneous",
+    "int": 28,
+    "double": 91.0387
+  },
+  {
+    "string": "dynamic",
+    "int": 74,
+    "double": 35.6137
+  },
+  {
+    "string": "system-worthy",
+    "int": 85,
+    "double": 78.749
+  },
+  {
+    "string": "capacity",
+    "int": 55,
+    "double": 72.1713
+  },
+  {
+    "string": "24 hour",
+    "int": 62,
+    "double": 30.6766
+  },
+  {
+    "string": "structure",
+    "int": 38,
+    "double": 59.0613
+  },
+  {
+    "string": "interface",
+    "int": 37,
+    "double": 91.8301
+  },
+  {
+    "string": "fresh-thinking",
+    "int": 79,
+    "double": 57.6159
+  },
+  {
+    "string": "eco-centric",
+    "int": 53,
+    "double": 19.1214
+  },
+  {
+    "string": "Fully-configurable",
+    "int": 35,
+    "double": 10.2964
+  },
+  {
+    "string": "secured line",
+    "int": 98,
+    "double": 32.7746
+  },
+  {
+    "string": "modular",
+    "int": 74,
+    "double": 84.549
+  },
+  {
+    "string": "User-friendly",
+    "int": 58,
+    "double": 12.8672
+  },
+  {
+    "string": "value-added",
+    "int": 57,
+    "double": 67.7948
+  },
+  {
+    "string": "info-mediaries",
+    "int": 62,
+    "double": 30.4762
+  },
+  {
+    "string": "service-desk",
+    "int": 28,
+    "double": 61.0856
+  },
+  {
+    "string": "cohesive",
+    "int": 34,
+    "double": 27.6025
+  },
+  {
+    "string": "Advanced",
+    "int": 69,
+    "double": 61.5324
+  },
+  {
+    "string": "data-warehouse",
+    "int": 34,
+    "double": 47.6698
+  }
+]

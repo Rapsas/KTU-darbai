@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title> Burlentes </title>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+	  		// čia rašomas JQuery kodas
+		  	$('#contentLeft h2').mouseover(function() { // užvedus pelyte
+		  		$(this).css('cursor', 'pointer'); // pakeičiamas pelytės žymeklis
+		  	});
+	  		
+	  		$('#contentLeft h2').click(function() { // paspaudus contentLeft h2 elem.
+				$('#contentLeft ul').slideToggle(); // slepiamas/rodomas ul meniu elem.
+				console.log("TEST");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="body">
+		<div id="header">
+			<h3 id="slogan">Svetaine apie burlentes</h3>
+		</div>
+		<div id="content">
+			<div id="topMenu">
+			<ul>
+				<li><a href="index.html" title="Apie mus">Apie mus</a></li>
+			</ul>
+			</div>
+			<div id="contentLeft">
+				<h2>Informacija</h2>
+				<ul>
+					<li><a href="varzybos.html">Varzybos</a></li>
+					<li><a href="asociacijos.html">Asociacijos</a></li>
+					<li><a href="sportininkai.html">Sportininkai</a></li>
+					<li><a href="sponsoriai.html">Sponsoriai</a></li>
+				</ul>
+
+			</div>
+			<div id="contentRight">
+				<h2 id="pageTitle">Varzybos</h2>
+				<div class="newsItem">
+					<p class="description">Labai kietas varzybu pavadinimas nr.1 </p>
+				</div>
+				<div class="newsItem">
+				<p class="description">Labai kietas varzybu pavadinimas nr.2</p>
+				</div>
+				<div class="newsItem newsItemLast">
+					<p class="description">Labai kietas varzybu pavadinimas nr.3</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+		</div>
+	</div>
+</body>
+</html>
