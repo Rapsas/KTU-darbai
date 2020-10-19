@@ -12,12 +12,13 @@ import (
 
 const tCount = 3
 const innerSize = 20
-const numFilter = 60
+const numFilter = 1
 
 type dataType struct {
 	Text    string  `json:"string"`
 	Num     int     `json:"int"`
 	Decimal float32 `json:"double"`
+	Result  float32
 }
 
 type DataArr []dataType
@@ -147,11 +148,11 @@ func (s *AsyncStore) toFile(file string) {
 	defer f.Close()
 
 	// Header
-	f.WriteString(fmt.Sprintf("%20v|%10v|%10v\n", "String", "Number", "Decimal"))
-	f.WriteString(fmt.Sprintf("%v\n", strings.Repeat("-", 40 + 2)))
+	f.WriteString(fmt.Sprintf("%20v|%10v|%10v|%15v\n", "String", "Number", "Decimal", "Result"))
+	f.WriteString(fmt.Sprintf("%v\n", strings.Repeat("-", 55 + 2)))
 
 	for _, elem := range s.data {
-		f.WriteString(fmt.Sprintf("%20v|%10v|%10v\n", elem.Text, elem.Num, elem.Decimal))
+		f.WriteString(fmt.Sprintf("%20v|%10v|%10v|%15v\n", elem.Text, elem.Num, elem.Decimal, elem.Result))
 	}
 }
 
@@ -164,13 +165,12 @@ func tFunc(group *sync.WaitGroup, monitor *Monitor, sorted *AsyncStore) {
 			break
 		}
 
-		if data.Num > numFilter {
+		data.Result = float32(data.Num) * data.Decimal * float32(data.Text[0])
+
+		if data.Result > numFilter {
 			// Add to sorted
 			sorted.add(*data)
 		}
-
-		// Expensive operation
-		//time.Sleep(1 * time.Second)
 	}
 
 	group.Done()
@@ -183,7 +183,7 @@ func main(){
 	monitor.active = true
 
 	// Read data
-	dataArr := readData("IFF8-13_PaulauskasM_L1_dat_2.json")
+	dataArr := readData("IFF8-13_PaulauskasM_L1_dat_1.json")
 
 	// Start threads
 	var wg sync.WaitGroup
@@ -194,10 +194,6 @@ func main(){
 
 	// Start adding data
 	for _, elem := range dataArr {
-		//for monitor.slot + 1 >= innerSize {
-		//	// Wait until there is space
-		//}
-
 		monitor.add(elem)
 	}
 
