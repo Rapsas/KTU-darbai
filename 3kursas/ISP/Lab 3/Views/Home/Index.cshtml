@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">GRAPE</h1>
+
+    <p>Leidimas: @ViewBag.Permission</p>
+
+    <div style="display: inline-table">
+
+        <form class="form" asp-area="" asp-controller="Login" asp-action="LoginAdmin" method="post">
+            <button type="submit" class="nav-link btn btn-link text-dark">Administratorius</button>
+        </form>
+
+        <form class="form" asp-area="" asp-controller="Login" asp-action="LoginTeacher" method="post">
+            <button type="submit" class="nav-link btn btn-link text-dark">Dėstytojas</button>
+        </form>
+
+        <form class="form" asp-area="" asp-controller="Login" asp-action="LoginStudent" method="post">
+            <button type="submit" class="nav-link btn btn-link text-dark">Studentas</button>
+        </form>
+
+        <form class="form" asp-area="" asp-controller="Login" asp-action="Logout" method="post">
+            <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+        </form>
+    </div>
+</div>

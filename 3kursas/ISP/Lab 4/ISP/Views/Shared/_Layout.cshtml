@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="~/"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIS</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/sidebar.css" />
+    <link rel="stylesheet" href="~/css/listview.css" />
+</head>
+<body>
+    @if ((ViewBag.LoggedIn != null && ViewBag.LoggedIn) || (ViewBag.Student != null && ViewBag.Student))
+    {
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow navbar-custom">
+                <div class="container">
+                    <a class="navbar-brand disable-hover" asp-area="" asp-controller="Home" asp-action="Index">AIS</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark @(ViewBag.ActiveTab == 1 ? "active" : "")" asp-area="" asp-controller="Iverciai" asp-action="Index">Įverčiai</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark @(ViewBag.ActiveTab == 2 ? "active" : "")" asp-area="" asp-controller="Tvarkarasciai" asp-action="Index">Tvarkaraščiai</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark @(ViewBag.ActiveTab == 3 ? "active" : "")" asp-area="" asp-controller="Komunikacija" asp-action="Index">Komunikacija</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark @(ViewBag.ActiveTab == 4 ? "active" : "")" asp-area="" asp-controller="Skelbimai" asp-action="Index">Skelbimai</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark @(ViewBag.ActiveTab == 5 ? "active" : "")" asp-area="" asp-controller="Isakymai" asp-action="Index">Įsakymai</a>
+                            </li>
+                            <li class="nav-item isp-logout">
+                                <form style="height:40px" asp-area="" asp-controller="Login" asp-action="Logout" method="post">
+                                    <button type="submit" class="nav-link btn btn-link text-dark">Atsijungti</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    }
+
+    @if (ViewBag.ActiveTab != 0)
+    {
+        <div class="sidebar">
+            @RenderSection("Sidebar", required: false)
+        </div>
+
+        <div class="content">
+            @RenderBody()
+        </div>
+    }
+    else
+    {
+        @RenderBody()
+    }
+
+    <!--Ištrynimo langas-->
+    <div class="modal fade" id="deleteEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">Patvirtinimas</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <span>
+                        Ar tikrai norite ištrinti "<span id="modalEntryName"></span>"?
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="deleteConfirmed()">Ištrinti</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Atšaukti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Šiap patvirtinimo langas-->
+    <div class="modal fade" id="confirmEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">Patvirtinimas</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <span id="confirmModalPrompt">
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    <button id="confirmModalButton" type="button" class="btn btn-success" data-dismiss="modal" onclick="confirmed()">Patvirtinti</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Atšaukti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @RenderSection("Modals", required: false)
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/b398cea8bb.js" crossorigin="anonymous"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+    <script src="_framework/blazor.server.js"></script>
+</body>
+</html>

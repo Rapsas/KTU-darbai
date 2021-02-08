@@ -1,0 +1,415 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@section Sidebar{
+    <a class="active" asp-area="" asp-controller="Komunikacija" asp-action="Mail">Paštas</a>
+    <a asp-area="" asp-controller="Komunikacija" asp-action="Chats">Pokalbiai</a>
+    <a asp-area="" asp-controller="Komunikacija" asp-action="Contacts">Kontaktai</a>
+}
+
+
+@section Modals{
+    <div class="modal fade" id="newEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="textModalLabel">Pervadinti</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- CIA VISI LAUKAI KURIE RODOMI PRIDEJIMO IR REDAGAVIMO METU, REIKES PAKEISTI requestInput FUNKCIJA -->
+                    <div class="input-group mb-3">
+                        <input id="inputModalName" type="text" class="form-control" placeholder="Pavadinimas" aria-label="Veiklos pavadinimas" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input id="inputModalTime" type="time" class="form-control" placeholder="Laikas" aria-label="Veiklos laikas" aria-describedby="basic-addon1"></input>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <textarea id="inputModalDescription" type="text" class="form-control" placeholder="Apibūdinimas" aria-label="Veiklos apibūdinimas" aria-describedby="basic-addon1"></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button id="inputModalConfirm" type="button" class="btn btn-success" data-dismiss="modal">Redaguoti</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Atšaukti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="viewEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewModalLabel">Peržiūra</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- CIA VISI LAUKAI TOKIE PATYS KAIP PRAITAM TIK VISI TURI disabled -->
+                    <div class="input-group mb-3">
+                        <input disabled id="viewModalName" type="text" class="form-control" placeholder="Pavadinimas" aria-label="Veiklos pavadinimas" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input disabled id="viewModalTime" type="time" class="form-control" placeholder="Laikas" aria-label="Veiklos laikas" aria-describedby="basic-addon1"></input>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <textarea disabled id="viewModalDescription" type="text" class="form-control" placeholder="Apibūdinimas" aria-label="Veiklos apibūdinimas" aria-describedby="basic-addon1"></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Uždaryti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<table class="table" style="width: 100%">
+    <tr>
+        <th>Mano vedama</th>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="isp-item-list col">
+                @if (ViewBag.Student)
+                {
+                    <div class="isp-item " id="CreateActivity" style="margin-bottom: 15px;">
+                        <i class="fas fa-plus" style="color: #3c5c4a;"></i>
+                        <span class="name">Nauja veikla</span>
+                    </div>
+                }
+
+                @for (int i = 0; i < 10; i++)
+                {
+                    string tooltipDirection = i == 0 ? "bottom" : "top";
+
+                    <div class="isp-item" name="@i">
+                        <span class="name">Veikla @i</span>
+                        <span class="right">'Laikas'</span>
+
+                        @if (ViewBag.Student)
+                        {
+                            <div class="vertical-line"></div>
+
+                            <div class="icons icons-count-2">
+                                <i class="fas fa-pen" data-toggle="tooltip" data-placement="@tooltipDirection" title="Redaguoti"></i>
+
+                                <i class="fas"></i>
+
+                                <i class="fas fa-trash" data-toggle="tooltip" data-placement="@tooltipDirection" title="Ištrinti"></i>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <th>Mentoriai</th>
+    </tr>
+    <tr>
+        <td>
+            <div class="isp-item-list col">
+                @for (int i = 0; i < 10; i++)
+                {
+                    string tooltipDirection = i == 0 ? "bottom" : "top";
+                    bool registered = i % 2 == 0;
+
+                    <div class="isp-item" name="@i">
+                        <span class="name">Tema @i</span>
+
+                        <span class="right">'Laikas'</span>
+                        <span class="right-secondary">'Mentoriaus vardas'</span>
+
+                        @if (ViewBag.Student)
+                        {
+                            <div class="vertical-line"></div>
+
+                            <div class="@(!ViewBag.Admin ? "icons icons-count-1" : "icons icons-count-3")">
+
+                                @if (!registered)
+                                {
+                                    <i class="fas fa-plus" data-toggle="tooltip" data-placement="@tooltipDirection" title="Užsiregistruoti"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-minus" data-toggle="tooltip" data-placement="@tooltipDirection" title="Išsiregistruoti"></i>
+                                }
+
+                                @if (ViewBag.Admin)
+                                {
+
+
+                                    <i class="fas fa-pen" data-toggle="tooltip" data-placement="@tooltipDirection" title="Redaguoti"></i>
+                                    <i class="fas fa-trash" data-toggle="tooltip" data-placement="@tooltipDirection" title="Ištrinti"></i>
+
+                                }
+
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <th>Tutoriai</th>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="isp-item-list col">
+                @for (int i = 0; i < 10; i++)
+                {
+                    string tooltipDirection = i == 0 ? "bottom" : "top";
+                    bool registered = i % 2 == 0;
+
+                    <div class="isp-item" name="@i">
+                        <span class="name">Tema @i</span>
+
+                        <span class="right">'Laikas'</span>
+                        <span class="right-secondary">'Tutoriaus vardas'</span>
+
+                        @if (ViewBag.Student)
+                        {
+                            <div class="vertical-line"></div>
+
+                            <div class="@(!ViewBag.Admin ? "icons icons-count-1" : "icons icons-count-3")">
+
+                                @if (!registered)
+                                {
+                                    <i class="fas fa-plus" data-toggle="tooltip" data-placement="@tooltipDirection" title="Užsiregistruoti"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-minus" data-toggle="tooltip" data-placement="@tooltipDirection" title="Išsiregistruoti"></i>
+                                }
+
+                                @if (ViewBag.Admin)
+                                {
+
+
+                                    <i class="fas fa-pen" data-toggle="tooltip" data-placement="@tooltipDirection" title="Redaguoti"></i>
+                                    <i class="fas fa-trash" data-toggle="tooltip" data-placement="@tooltipDirection" title="Ištrinti"></i>
+
+                                }
+
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <th>Papildoma veikla</th>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="isp-item-list col">
+                @for (int i = 0; i < 10; i++)
+                {
+                    string tooltipDirection = i == 0 ? "bottom" : "top";
+                    bool registered = i % 2 == 0;
+
+                    <div class="isp-item" name="@i">
+                        <span class="name">Veikla @i</span>
+
+                        <span class="right">'Laikas'</span>
+
+                        @if (ViewBag.Student)
+                        {
+                            <div class="vertical-line"></div>
+
+                            <div class="@(!ViewBag.Admin ? "icons icons-count-1" : "icons icons-count-3")">
+
+                                @if (!registered)
+                                {
+                                    <i class="fas fa-plus" data-toggle="tooltip" data-placement="@tooltipDirection" title="Užsiregistruoti"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-minus" data-toggle="tooltip" data-placement="@tooltipDirection" title="Išsiregistruoti"></i>
+                                }
+
+                                @if (ViewBag.Admin)
+                                {
+
+
+                                    <i class="fas fa-pen" data-toggle="tooltip" data-placement="@tooltipDirection" title="Redaguoti"></i>
+                                    <i class="fas fa-trash" data-toggle="tooltip" data-placement="@tooltipDirection" title="Ištrinti"></i>
+
+                                }
+
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </td>
+    </tr>
+</table>
+
+@section Scripts {
+    <script>
+        function deleteConfirmed() {
+            // Funkcija iskviecia kai patvirtintas istrynimas, reikia ajax requesto
+        }
+
+        function confirmed() {
+            // Funkcija iskviecia kai patvirtintas, reikia ajax requesto
+        }
+
+        function getEntryName(element) {
+            return $(element).closest(".isp-item").attr("name");
+        }
+
+        function deleteEntry(element) {
+            $("#modalEntryName").text(getEntryName(element));
+            $('#deleteEntryModal').modal();
+        }
+
+        function confirmAction(element, prompt, klass) {
+            $("#confirmModalButton").removeClass("btn-success")
+            $("#confirmModalButton").removeClass("btn-danger")
+            $("#confirmModalButton").addClass(klass)
+            $("#confirmModalPrompt").text(prompt);
+            $('#confirmEntryModal').modal();
+        }
+
+        function editEntry(element) {
+            requestInput(
+                "Redaguoti",
+                getEntryName(element),
+                "08:24",
+                "VEIKLOS APIBUDINIMAS",
+                "Redaguoti",
+                function () {
+                    // Ajax
+                });
+        }
+
+        function register(element) {
+            confirmAction(element, "Ar tikrai norite užsiregistruoti į veiklą " + getEntryName(element) + "?", "btn-success")
+        }
+
+        function unregister(element) {
+            confirmAction(element, "Ar tikrai norite išsiregistruoti iš " + getEntryName(element) + " veiklos?", "btn-danger")
+        }
+
+        function requestInput(header, initialText1, initialText2, initialText3, btnText, clickcb) {
+            $("#textModalLabel").text(header);
+            $("#inputModalConfirm").text(btnText);
+            $("#inputModalConfirm").off("click");
+            $("#inputModalConfirm").click(clickcb);
+            $("#inputModalName").val(initialText1);
+            $("#inputModalTime").val(initialText2);
+            $("#inputModalDescription").val(initialText3);
+            $('#newEntryModal').modal();
+        }
+
+        function newEntry() {
+            requestInput(
+                "Nauja veikla",
+                "",
+                "",
+                "",
+                "Sukurti",
+                function () {
+                    // Cia normalu ajax reikes ideti, cia tik pavyzdinis
+                    @*
+                    let name = $("#id").val();
+
+                    $.ajax({
+                        url: '@Url.Action(Action, Controller)',
+                        type: 'POST',
+                        data: {
+                            details: {
+                                vardas: reiksme
+                            }
+                        },
+                        success: function (data) {
+                            if (data === 'True') {
+                                // Kazkas kai pavyko
+                            }
+                            else {
+                                // Kazkas blogai, arba jau egzistuoja arba dar kazkas
+                            }
+                        },
+                        error: function () {
+                            // Nepavyko ajax issiusti
+                        }
+                    });*@
+                });
+        }
+
+        function selectElement(element) {
+            $("#viewModalName").val(getEntryName(element));
+            $("#viewModalTime").val("08:24");
+            $("#viewModalDescription").val("VEIKLOS APIBUDINIMAS");
+            $('#viewEntryModal').modal();
+        }
+
+        $(document).ready(function () {
+            // Don't ask
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+
+            // Ištrinti
+            $(".isp-item").on('click', '.fa-trash', function (event) {
+                event.stopPropagation();
+                deleteEntry($(this));
+            });
+
+            // Redaguoti
+            $(".isp-item").on('click', '.fa-pen', function (event) {
+                event.stopPropagation();
+                editEntry($(this));
+            });
+
+            // Uzsiregistruoti
+            $(".isp-item").on('click', '.fa-plus', function (event) {
+                event.stopPropagation();
+                register($(this));
+            });
+
+            // Atsiregistruoti
+            $(".isp-item").on('click', '.fa-minus', function (event) {
+                event.stopPropagation();
+                unregister($(this));
+            });
+
+            // Sukurimas
+            $("#CreateActivity").click(function (event) {
+                event.stopPropagation();
+                newEntry();
+            });
+
+            // Paspaudimas ant elemento
+            $(".isp-item-list").on("click", ".isp-item", function (event) {
+                event.stopPropagation();
+                selectElement($(this));
+            });
+        })
+    </script>
+}

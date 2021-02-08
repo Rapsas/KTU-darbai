@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\KTU-darbai\\Universitie\\3kursas\\ISP\\Lab 4\\ISP\\ISP.csproj": {}
+  },
+  "projects": {
+    "D:\\KTU-darbai\\Universitie\\3kursas\\ISP\\Lab 4\\ISP\\ISP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\KTU-darbai\\Universitie\\3kursas\\ISP\\Lab 4\\ISP\\ISP.csproj",
+        "projectName": "ISP",
+        "projectPath": "D:\\KTU-darbai\\Universitie\\3kursas\\ISP\\Lab 4\\ISP\\ISP.csproj",
+        "packagesPath": "C:\\Users\\Mikas\\.nuget\\packages\\",
+        "outputPath": "D:\\KTU-darbai\\Universitie\\3kursas\\ISP\\Lab 4\\ISP\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mikas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "Syncfusion.Pdf.Net.Core": {
+              "target": "Package",
+              "version": "[18.4.0.30, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,271 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model List<Notice>
+
+@section Sidebar{
+    <a asp-area="" asp-controller="Skelbimai" asp-action="Messages">Skelbimai</a>
+    <a class="active" asp-area="" asp-controller="Skelbimai" asp-action="Notices">Oficialūs pranešimai</a>
+    <a asp-area="" asp-controller="Skelbimai" asp-action="Surveys">Apklausos</a>
+    <a asp-area="" asp-controller="Skelbimai" asp-action="Activities">Popaskaitinė veikla</a>
+}
+
+@section Modals{
+    <div class="modal fade" id="newEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="textModalLabel">Pervadinti</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- CIA VISI LAUKAI KURIE RODOMI PRIDEJIMO IR REDAGAVIMO METU, REIKES PAKEISTI requestInput FUNKCIJA -->
+                    <div class="input-group mb-3">
+                        <input id="inputModalName" type="text" class="form-control" placeholder="Pavadinimas" aria-label="Pranešimo pavadinimas" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <textarea id="inputModalContent" type="text" class="form-control" placeholder="Pranešimas" aria-label="Pranešimo tekstas" aria-describedby="basic-addon1"></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button id="inputModalConfirm" type="button" class="btn btn-success" data-dismiss="modal">Redaguoti</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Atšaukti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="viewEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewModalLabel">Peržiūra</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- CIA VISI LAUKAI TOKIE PATYS KAIP PRAITAM TIK VISI TURI disabled -->
+                    <div class="input-group mb-3">
+                        <input disabled id="viewModalName" type="text" class="form-control" placeholder="Pavadinimas" aria-label="Pranešimo pavadinimas" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <textarea disabled id="viewModalContent" type="text" class="form-control" placeholder="Pranešimas" aria-label="Pranešimo tekstas" aria-describedby="basic-addon1"></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Uždaryti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="isp-item-list">
+    @if (ViewBag.Admin)
+    {
+        <div class="isp-item" id="CreateNotice" style="margin-bottom: 15px;">
+            <i class="fas fa-plus" style="color: #3c5c4a;"></i>
+            <span class="name">Naujas pranešimas</span>
+        </div>
+    }
+
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        string tooltipDirection = i == 0 ? "bottom" : "top";
+
+        <div class="isp-item" name="@Model[i].ID">
+            <span hidden class="isp-item-id">@Model[i].ID</span>
+            <span hidden class="isp-item-name">@Model[i].Name</span>
+            <span hidden class="isp-item-content">@Model[i].Content</span>
+            <span hidden class="isp-item-date">@Model[i].Date</span>
+            <span hidden class="isp-item-creator-id">@Model[i].CreatorID</span>
+
+            <span class="name">@Model[i].Name</span>
+
+            @if (ViewBag.Admin)
+            {
+                <div class="vertical-line"></div>
+
+                <div class="icons icons-count-2">
+                    <i class="fas fa-pen" data-toggle="tooltip" data-placement="@tooltipDirection" title="Redaguoti"></i>
+
+                    <i class="fas"></i>
+
+                    <i class="fas fa-trash" data-toggle="tooltip" data-placement="@tooltipDirection" title="Ištrinti"></i>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        var selectedElement = null
+
+        function deleteConfirmed() {
+            // Funkcija iskviecia kai patvirtintas istrynimas, reikia ajax requesto
+            fetch("@Url.Action("DeleteNotice", "Skelbimai")", {
+                method: "post",
+                headers: { 'Content-Type': 'application/json' },
+                body: entryToJSON(selectedElement)
+            }).then(response => {
+                if (response.status !== 200) {
+                    // Error
+                } else {
+                    // Add element
+                    location.reload(true);
+                }
+            })
+        }
+
+        function getItem(element) {
+            return $(element).closest(".isp-item");
+        }
+
+        function getAsObject(element) {
+            let item = getItem(element);
+
+            let id = parseInt(item.find(".isp-item-id").text());
+            let date = item.find(".isp-item-date").text();
+            let name = item.find(".isp-item-name").text();
+            let content = item.find(".isp-item-content").text();
+            let creator = item.find(".isp-item-creator-id").text();
+
+            return {
+                id: id,
+                name: name,
+                content: content,
+                date: date,
+                creator: creator,
+            }
+        }
+
+        function entryToJSON(element) {
+            return JSON.stringify({
+                ID: element.id,
+                Name: element.name,
+                Content: element.content,
+                Date: element.date,
+                CreatorID: element.creator
+            })
+        }
+
+        function deleteEntry(element) {
+            selectedElement = getAsObject(element);
+            $("#modalEntryName").text(selectedElement.name);
+            $('#deleteEntryModal').modal();
+        }
+
+        function editEntry(element) {
+            selectedElement = getAsObject(element);
+
+            requestInput(
+                "Redaguoti",
+                selectedElement.name,
+                selectedElement.content,
+                "Redaguoti",
+                function () {
+                    selectedElement.name = $("#inputModalName").val();
+                    selectedElement.content = $("#inputModalContent").val();
+
+                    fetch("@Url.Action("EditNotice", "Skelbimai")", {
+                        method: "post",
+                        headers: { 'Content-Type': 'application/json' },
+                        body: entryToJSON(selectedElement)
+                    }).then(response => {
+                        if (response.status !== 200) {
+                            // Error
+                        } else {
+                            // Add element
+                            location.reload(true);
+                        }
+                    })
+                });
+        }
+
+        function requestInput(header, initialText1, initialText2, btnText, clickcb) {
+            $("#textModalLabel").text(header);
+            $("#inputModalConfirm").text(btnText);
+            $("#inputModalConfirm").off("click");
+            $("#inputModalConfirm").click(clickcb);
+            $("#inputModalName").val(initialText1);
+            $("#inputModalContent").val(initialText2);
+            $('#newEntryModal').modal();
+        }
+
+        function newEntry() {
+            requestInput(
+                "Naujas pranešimas",
+                "",
+                "",
+                "Sukurti",
+                function () {
+                    fetch("@Url.Action("NewNotice", "Skelbimai")", {
+                        method: "post",
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            Name: JSON.stringify($("#inputModalName").val()),
+                            Content: JSON.stringify($("#inputModalContent").val())
+                        })
+                    }).then(response => {
+                        if (response.status !== 200) {
+                            // Error
+                        } else {
+                            // Add element
+                            location.reload(true);
+                        }
+                    })
+                });
+        }
+
+        function selectElement(element) {
+            selectedElement = getAsObject(element);
+            $("#viewModalName").val(selectedElement.name);
+            $("#viewModalContent").val(selectedElement.content);
+            $('#viewEntryModal').modal();
+        }
+
+        $(document).ready(function () {
+            // Don't ask
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+
+            // Ištrinti
+            $(".isp-item").on('click', '.fa-trash', function (event) {
+                event.stopPropagation();
+                deleteEntry($(this));
+            });
+
+            // Redaguoti
+            $(".isp-item").on('click', '.fa-pen', function (event) {
+                event.stopPropagation();
+                editEntry($(this));
+            });
+
+            // Sukurimas
+            $("#CreateNotice").click(function (event) {
+                event.stopPropagation();
+                newEntry();
+            });
+
+            // Paspaudimas ant elemento
+            $(".isp-item-list").on("click", ".isp-item", function (event) {
+                event.stopPropagation();
+                selectElement($(this));
+            });
+        })
+    </script>
+}

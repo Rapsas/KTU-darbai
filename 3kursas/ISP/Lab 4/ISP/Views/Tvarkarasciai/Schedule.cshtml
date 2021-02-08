@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+
+
+@section Sidebar{
+    <a class="active" asp-area="" asp-controller="Tvarkarasciai" asp-action="Schedule">Tvarkaraštis</a>
+    @*<a asp-area="" asp-controller="Skelbimai" asp-action="Notices">Oficialūs pranešimai</a>
+        <a asp-area="" asp-controller="Skelbimai" asp-action="Surveys">Apklausos</a>
+        <a class="active" asp-area="" asp-controller="Skelbimai" asp-action="Activities">Popaskaitinė veikla</a>*@
+}
+
+<h1 align="center"> Tvarkaraštis</h1>
+<p align="center">
+    <select name="Savaites" id="cars">
+        @for (int i = 1; i <= 22; i++)
+        {
+            <option value="savaite@i">@i Savaitė  </option>
+        }
+    </select>
+</p>
+<table border="5" cellspacing="0" align="center">
+    <tr>
+        <td align="center" height="50"
+            width="100">
+            <br>
+        </td>
+        <td align="center" height="50"
+            width="100">
+            <b><br>9:00-10:30</b>
+        </td>
+        <td align="center" height="50"
+            width="100">
+            <b><br>11:00-12:30</b>
+        </td>
+        <td align="center" height="50"
+            width="100">
+            <b><br>13:30-15:00</b>
+        </td>
+        <td align="center" height="50"
+            width="100">
+            <b><br>15:30-17:00</b>
+        </td>
+        <td align="center" height="50"
+            width="100">
+            <b><br>17:30-19:00</b>
+        </td>
+    </tr>
+    <tr data-toggle="modal" data-id="1" data-target="#orderModal">
+        <td align="center" height="50">
+            <b>Pirmadienis</b>
+        </td>
+        @for (int i = 1; i <= 5; i++)
+        {
+            <td title="Informacija apie moduli" align="center" height="50">@i Modulis </td>
+        }
+    </tr>
+
+    <tr>
+        <td align="center" height="50">
+            <b>Antradienis</b>
+        </td>
+        @for (int i = 1; i <= 5; i++)
+        {
+            <td title="Informacija apie moduli" align="center" height="50">@i Modulis </td>
+        }
+
+    </tr>
+    <tr>
+        <td align="center" height="50">
+            <b>Trečiadenis</b>
+        </td>
+        @for (int i = 1; i <= 5; i++)
+        {
+            <td title="Informacija apie moduli" align="center" height="50">@i Modulis </td>
+        }
+    </tr>
+    <tr>
+        <td align="center" height="50">
+            <b>Ketvirtadienis</b>
+        </td>
+        @for (int i = 1; i <= 5; i++)
+        {
+            <td title="Informacija apie moduli" align="center" height="50">@i Modulis </td>
+        }
+    </tr>
+    <tr>
+        <td align="center" height="50">
+            <b>Penktadienis</b>
+        </td>
+        @for (int i = 1; i <= 5; i++)
+        {
+            <td title="Informacija apie moduli" align="center" height="50">@i Modulis </td>
+        }
+    </tr>
+</table>
+
+@section Modals{
+    <div class="modal fade" id="newEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="textModalLabel">Pervadinti</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- CIA VISI LAUKAI KURIE RODOMI PRIDEJIMO IR REDAGAVIMO METU, REIKES PAKEISTI requestInput FUNKCIJA -->
+                    <div class="input-group mb-3">
+                        <input id="inputModalName" type="text" class="form-control" placeholder="Pavadinimas" aria-label="Modulio atsiskaitymo pavadinimas" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <textarea id="inputModalContent" type="text" class="form-control" placeholder="Aprasymas" aria-label="Modulio atsiskaitymo laikas ir aprasymas" aria-describedby="basic-addon1"></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button id="inputModalConfirm" type="button" class="btn btn-success" data-dismiss="modal">Redaguoti</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Atšaukti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="viewEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewModalLabel">Peržiūra</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- CIA VISI LAUKAI TOKIE PATYS KAIP PRAITAM  VISI TURI disabled -->
+                    <div class="input-group mb-3">
+                        <input disabled id="viewModalName" type="text" class="form-control" placeholder="Pavadinimas" aria-label="Modulio atsiskaitymo pavadinimas" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <textarea disabled id="viewModalContent" type="text" class="form-control" placeholder="Aprasymas" aria-label="Modulio atsiskaitymo laikas ir aprasymas" aria-describedby="basic-addon1"></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Uždaryti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<p></p>
+<div class="isp-item-list">
+    <div class="Atsiskaitymai" align="center">
+        @if (ViewBag.Teacher)
+        {
+            <div class="isp-item" id="CreateMessage" style="margin-bottom: 15px;">
+                <i class="fas fa-plus" style="color: #3c5c4a;"></i>
+                <span class="name">Naujas atsiskaitymas</span>
+            </div>}
+        <p><b>Atsksikaitymų laikai</b></p>
+        @for (int i = 1; i <= 3; i++)
+        {
+            string tooltipDirection = i == 0 ? "bottom" : "top";
+
+            <div class="isp-item" name="@i">
+                <span class="name">@i Modulio atsiskaitymo laikas</span>
+
+                @if (ViewBag.Teacher)
+                {
+                    <div class="vertical-line"></div>
+
+                    <div class="icons icons-count-2">
+                        <i class="fas fa-pen" data-toggle="tooltip" data-placement="@tooltipDirection" title="Redaguoti"></i>
+
+                        <i class="fas"></i>
+
+                        <i class="fas fa-trash" data-toggle="tooltip" data-placement="@tooltipDirection" title="Ištrinti"></i>
+                    </div>}
+            </div>}
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function deleteConfirmed() {
+            // Funkcija iskviecia kai patvirtintas istrynimas, reikia ajax requesto
+        }
+
+        function getEntryName(element) {
+            return $(element).closest(".isp-item").attr("name");
+        }
+
+        function deleteEntry(element) {
+            $("#modalEntryName").text(getEntryName(element));
+            $('#deleteEntryModal').modal();
+        }
+
+        function editEntry(element) {
+            requestInput(
+                "Redaguoti",
+                getEntryName(element),
+                "Modulio aprašymas",
+                "Atsiskaitymo laikas ir aprašymas",
+                function () {
+                    // Ajax
+                });
+        }
+
+        function requestInput(header, initialText1, initialText2, btnText, clickcb) {
+            $("#textModalLabel").text(header);
+            $("#inputModalConfirm").text(btnText);
+            $("#inputModalConfirm").off("click");
+            $("#inputModalConfirm").click(clickcb);
+            $("#inputModalName").val(initialText1);
+            $("#inputModalContent").val(initialText2);
+            $('#newEntryModal').modal();
+        }
+
+        function newEntry() {
+            requestInput(
+                "Naujas skelbimas",
+                "",
+                "",
+                "Sukurti",
+                function () {
+                    // Cia normalu ajax reikes ideti, cia tik pavyzdinis
+                    @*
+                    let name = $("#id").val();
+
+                    $.ajax({
+                        url: '@Url.Action(Action, Controller)',
+                        type: 'POST',
+                        data: {
+                            details: {
+                                vardas: reiksme
+                            }
+                        },
+                        success: function (data) {
+                            if (data === 'True') {
+                                // Kazkas kai pavyko
+                            }
+                            else {
+                                // Kazkas blogai, arba jau egzistuoja arba dar kazkas
+                            }
+                        },
+                        error: function () {
+                            // Nepavyko ajax issiusti
+                        }
+                    });*@
+                });
+        }
+
+        function selectElement(element) {
+            $("#viewModalName").val(getEntryName(element));
+            $("#viewModalContent").val("Atsiskaitymo laikas ir aprašymas");
+            $('#viewEntryModal').modal();
+        }
+
+        $(document).ready(function () {
+            // Don't ask
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+
+            // Ištrinti
+            $(".isp-item").on('click', '.fa-trash', function (event) {
+                event.stopPropagation();
+                deleteEntry($(this));
+            });
+
+            // Redaguoti
+            $(".isp-item").on('click', '.fa-pen', function (event) {
+                event.stopPropagation();
+                editEntry($(this));
+            });
+
+            // Sukurimas
+            $("#CreateMessage").click(function (event) {
+                event.stopPropagation();
+                newEntry();
+            });
+
+            // Paspaudimas ant elemento
+            $(".isp-item-list").on("click", ".isp-item", function (event) {
+                event.stopPropagation();
+                selectElement($(this));
+            });
+
+            $("td").tooltip({
+                track: true,
+                content: "Informacija apie moduli",
+
+            });
+        })
+    </script>
+}

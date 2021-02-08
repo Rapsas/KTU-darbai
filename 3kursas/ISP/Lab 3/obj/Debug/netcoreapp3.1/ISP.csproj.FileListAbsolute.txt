@@ -1,0 +1,759 @@
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\ISP.exe
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\ISP.deps.json
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\ISP.runtimeconfig.json
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\ISP.runtimeconfig.dev.json
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\ISP.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\ISP.pdb
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\ISP.Views.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\ISP.Views.pdb
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.csprojAssemblyReference.cache
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.AssemblyInfoInputs.cache
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.AssemblyInfo.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.RazorAssemblyInfo.cache
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.RazorAssemblyInfo.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.TagHelpers.input.cache
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.TagHelpers.output.cache
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.RazorCoreGenerate.cache
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.RazorTargetAssemblyInfo.cache
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.RazorTargetAssemblyInfo.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.Views.pdb
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\staticwebassets\ISP.StaticWebAssets.Manifest.cache
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\staticwebassets\ISP.StaticWebAssets.xml
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.pdb
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.genruntimeconfig.cache
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.csproj.CopyComplete
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Skelbimai\Index.cshtml.g.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Isakymai\Index.cshtml.g.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Iverciai\Index.cshtml.g.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Komunikacija\Index.cshtml.g.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Tvarkarasciai\Index.cshtml.g.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Antiforgery.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Core.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Authorization.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Forms.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Server.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Web.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.CookiePolicy.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cors.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HostFiltering.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Html.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Extensions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Features.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpOverrides.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpsPolicy.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Identity.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.Routing.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Metadata.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Core.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Cors.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Localization.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Razor.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.Runtime.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCompression.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Rewrite.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.HttpSys.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IIS.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IISIntegration.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Session.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Common.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Core.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.StaticFiles.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.WebSockets.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.WebUtilities.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.CSharp.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Caching.Memory.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Binder.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.CommandLine.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Ini.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Json.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Xml.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.DependencyInjection.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Composite.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Http.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Core.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Stores.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Configuration.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Console.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Debug.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventLog.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventSource.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.TraceSource.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.ObjectPool.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.DataAnnotations.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Primitives.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.WebEncoders.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.JSInterop.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Net.Http.Headers.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.VisualBasic.Core.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.VisualBasic.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Win32.Primitives.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Win32.Registry.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\mscorlib.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\netstandard.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.AppContext.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Buffers.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Collections.Concurrent.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Collections.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Collections.Immutable.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Collections.NonGeneric.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Collections.Specialized.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.Annotations.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.DataAnnotations.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.EventBasedAsync.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.Primitives.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.TypeConverter.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Configuration.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Console.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Core.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Data.Common.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Data.DataSetExtensions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Data.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Contracts.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Debug.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.DiagnosticSource.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.EventLog.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.FileVersionInfo.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Process.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.StackTrace.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.TextWriterTraceListener.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Tools.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.TraceSource.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Tracing.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Drawing.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Drawing.Primitives.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Dynamic.Runtime.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Globalization.Calendars.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Globalization.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Globalization.Extensions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.Brotli.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.FileSystem.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.ZipFile.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.DriveInfo.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.Primitives.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.Watcher.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.IsolatedStorage.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.MemoryMappedFiles.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.Pipelines.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.Pipes.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.UnmanagedMemoryStream.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Linq.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Linq.Expressions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Linq.Parallel.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Linq.Queryable.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Memory.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.Http.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.HttpListener.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.Mail.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.NameResolution.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.NetworkInformation.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.Ping.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.Primitives.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.Requests.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.Security.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.ServicePoint.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.Sockets.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.WebClient.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.WebHeaderCollection.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.WebProxy.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.WebSockets.Client.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.WebSockets.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Numerics.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Numerics.Vectors.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.ObjectModel.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.DispatchProxy.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.ILGeneration.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.Lightweight.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.Extensions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.Metadata.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.Primitives.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.TypeExtensions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Resources.Reader.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Resources.ResourceManager.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Resources.Writer.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.CompilerServices.Unsafe.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.CompilerServices.VisualC.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Extensions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Handles.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.WindowsRuntime.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Intrinsics.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Loader.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Numerics.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Formatters.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Json.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Primitives.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Xml.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.AccessControl.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Claims.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Algorithms.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Cng.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Csp.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Encoding.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Primitives.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.X509Certificates.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Xml.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Permissions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Principal.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Principal.Windows.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.SecureString.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.ServiceModel.Web.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.ServiceProcess.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.CodePages.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.Extensions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Text.Encodings.Web.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Text.RegularExpressions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Channels.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Overlapped.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Dataflow.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Extensions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Parallel.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Thread.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.ThreadPool.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Timer.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Transactions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Transactions.Local.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.ValueTuple.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Web.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Web.HttpUtility.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Windows.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Windows.Extensions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.Linq.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.ReaderWriter.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.Serialization.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.XDocument.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.XmlDocument.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.XmlSerializer.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.XDocument.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\refs\WindowsBase.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.csproj.CoreCompileInputs.cache
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.MvcApplicationPartsAssemblyInfo.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\ISP.MvcApplicationPartsAssemblyInfo.cache
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Skelbimai\Activities.cshtml.g.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Skelbimai\Messages.cshtml.g.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Skelbimai\Notices.cshtml.g.cs
+D:\Studijos\Treti metai\Pirmas pusmetis\ISP\Lab3\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Skelbimai\Surveys.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\appsettings.json
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ISP.exe
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ISP.deps.json
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ISP.runtimeconfig.json
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ISP.runtimeconfig.dev.json
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ISP.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ISP.pdb
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Antiforgery.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Core.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Authorization.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Forms.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Server.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Web.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.CookiePolicy.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cors.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HostFiltering.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Html.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Extensions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Features.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpOverrides.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpsPolicy.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Identity.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.Routing.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Metadata.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Core.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Cors.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Localization.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Razor.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.Runtime.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCompression.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Rewrite.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.HttpSys.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IIS.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IISIntegration.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Session.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Common.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Core.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.StaticFiles.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.WebSockets.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.WebUtilities.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.CSharp.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Caching.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Caching.Memory.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Binder.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.CommandLine.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Ini.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Json.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Xml.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.DependencyInjection.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Composite.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Physical.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Http.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Core.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Stores.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Abstractions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Configuration.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Console.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Debug.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventLog.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventSource.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.TraceSource.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.ObjectPool.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.DataAnnotations.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Primitives.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.WebEncoders.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.JSInterop.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Net.Http.Headers.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.VisualBasic.Core.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.VisualBasic.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\Microsoft.Win32.Primitives.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\mscorlib.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\netstandard.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.AppContext.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Buffers.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Collections.Concurrent.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Collections.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Collections.Immutable.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Collections.NonGeneric.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Collections.Specialized.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.Annotations.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.DataAnnotations.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.EventBasedAsync.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.Primitives.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.TypeConverter.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Configuration.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Console.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Core.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Data.Common.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Data.DataSetExtensions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Data.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Contracts.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Debug.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.DiagnosticSource.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.FileVersionInfo.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Process.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.StackTrace.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.TextWriterTraceListener.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Tools.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.TraceSource.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Tracing.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Drawing.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Drawing.Primitives.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Dynamic.Runtime.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Globalization.Calendars.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Globalization.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Globalization.Extensions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.Brotli.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.FileSystem.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.ZipFile.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.DriveInfo.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.Primitives.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.Watcher.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.IsolatedStorage.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.MemoryMappedFiles.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.Pipes.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.IO.UnmanagedMemoryStream.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Linq.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Linq.Expressions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Linq.Parallel.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Linq.Queryable.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Memory.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.Http.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.HttpListener.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.Mail.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.NameResolution.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.NetworkInformation.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.Ping.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.Primitives.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.Requests.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.Security.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.ServicePoint.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.Sockets.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.WebClient.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.WebHeaderCollection.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.WebProxy.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.WebSockets.Client.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Net.WebSockets.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Numerics.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Numerics.Vectors.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.ObjectModel.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.DispatchProxy.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.ILGeneration.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.Lightweight.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.Extensions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.Metadata.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.Primitives.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Reflection.TypeExtensions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Resources.Reader.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Resources.ResourceManager.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Resources.Writer.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.CompilerServices.Unsafe.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.CompilerServices.VisualC.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Extensions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Handles.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.WindowsRuntime.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Intrinsics.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Loader.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Numerics.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Formatters.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Json.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Primitives.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Xml.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Claims.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Algorithms.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Csp.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Encoding.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Primitives.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.X509Certificates.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.Principal.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Security.SecureString.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.ServiceModel.Web.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.ServiceProcess.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.CodePages.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.Extensions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Text.Encodings.Web.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Text.RegularExpressions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Channels.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Overlapped.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Dataflow.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Extensions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Parallel.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Thread.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.ThreadPool.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Threading.Timer.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Transactions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Transactions.Local.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.ValueTuple.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Web.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Web.HttpUtility.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Windows.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.Linq.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.ReaderWriter.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.Serialization.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.XDocument.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.XmlDocument.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.XmlSerializer.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.XDocument.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\refs\WindowsBase.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ISP.Views.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ISP.Views.pdb
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.csprojAssemblyReference.cache
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.AssemblyInfoInputs.cache
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.AssemblyInfo.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.RazorAssemblyInfo.cache
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.RazorAssemblyInfo.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.TagHelpers.input.cache
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.TagHelpers.output.cache
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.RazorCoreGenerate.cache
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Isakymai\Index.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Iverciai\Index.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Komunikacija\Index.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Skelbimai\Activities.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Skelbimai\Index.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Skelbimai\Messages.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Skelbimai\Notices.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Skelbimai\Surveys.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Tvarkarasciai\Index.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.RazorTargetAssemblyInfo.cache
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.RazorTargetAssemblyInfo.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.Views.pdb
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.csproj.CopyComplete
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\staticwebassets\ISP.StaticWebAssets.Manifest.cache
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\staticwebassets\ISP.StaticWebAssets.xml
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.pdb
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.genruntimeconfig.cache
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.csproj.CoreCompileInputs.cache
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.MvcApplicationPartsAssemblyInfo.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\ISP.MvcApplicationPartsAssemblyInfo.cache
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Iverciai\Marks.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Iverciai\Attendance.cshtml.g.cs
+D:\KTU-darbai\Universitie\3kursas\ISP\obj\Debug\netcoreapp3.1\Razor\Views\Iverciai\Requirements.cshtml.g.cs

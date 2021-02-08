@@ -1,0 +1,5 @@
+﻿  Compiling CUDA source file IFF_8-13_PaulauskasM_L3.cu...
+  
+  D:\KTU-darbai\Universitie\3kursas\Lygiagretus\Lab3 CUDA\Lab 3 CUDA\Lab 3 CUDA>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\IFF_8-13_PaulauskasM_L3.cu.obj "D:\KTU-darbai\Universitie\3kursas\Lygiagretus\Lab3 CUDA\Lab 3 CUDA\Lab 3 CUDA\IFF_8-13_PaulauskasM_L3.cu" 
+  IFF_8-13_PaulauskasM_L3.cu
+  Lab 3 CUDA.vcxproj -> D:\KTU-darbai\Universitie\3kursas\Lygiagretus\Lab3 CUDA\Lab 3 CUDA\x64\Debug\Lab 3 CUDA.exe

@@ -103,7 +103,7 @@ func (m *Monitor) get() *dataType {
 	defer m.mux.Unlock()
 
 	for m.slot == -1 {
-		if !m.active {
+		if !m.active  {
 			return nil
 		}
 

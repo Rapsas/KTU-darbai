@@ -1,0 +1,309 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@section Sidebar{
+    <a asp-area="" asp-controller="Komunikacija" asp-action="Mail">Paštas</a>
+    <a class="active" asp-area="" asp-controller="Komunikacija" asp-action="Chats">Pokalbiai</a>
+    <a asp-area="" asp-controller="Komunikacija" asp-action="Contacts">Kontaktai</a>
+}
+
+
+@section Modals{
+    <div class="modal fade" id="newEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="textModalLabel">Pridėti</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- CIA VISI LAUKAI KURIE RODOMI PRIDEJIMO IR REDAGAVIMO METU, REIKES PAKEISTI requestInput FUNKCIJA -->
+                    <div class="input-group mb-3">
+                        <input id="inputModalName" type="text" class="form-control" placeholder="Gavėjas" aria-label="Gavėjo pavadinimas" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <textarea id="inputModalDescription" type="text" class="form-control" placeholder="Turinys" aria-label="Pokalbio turinys" aria-describedby="basic-addon1"></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button id="inputModalConfirm" type="button" class="btn btn-success" data-dismiss="modal">Redaguoti</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Atšaukti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="viewEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewModalLabel">Peržiūra</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- CIA VISI LAUKAI TOKIE PATYS KAIP PRAITAM TIK VISI TURI disabled -->
+                    <div class="input-group mb-3">
+                        <input disabled id="viewModalName" type="text" class="form-control" placeholder="Pavadinimas" aria-label="Pokalbio pavadinimas" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <textarea disabled id="viewModalDescription" type="text" class="form-control" placeholder="Apibūdinimas" aria-label="Pokalbio apibūdinimas" aria-describedby="basic-addon1"></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Uždaryti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<table class="table" style="width: 100%">
+    <tr>
+        <th>
+            Filtravimas:
+        </th>
+    </tr>
+    <tr>
+        <th class="isp" style="margin-bottom: 15px;">
+
+            <span class="name">
+                @Html.TextArea("filterChats", "", new { @class = "form-control" })
+            </span>
+        </th>
+    </tr>
+
+    <tr>
+        <th>Asmeniniai pokalbiai</th>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="isp-item-list col">
+                @if (ViewBag.Student)
+                {
+                    <div class="isp-item " id="CreateChat" style="margin-bottom: 15px;">
+                        <i class="fas fa-plus" style="color: #3c5c4a;"></i>
+                        <span class="name">Naujas pokalbis</span>
+                    </div>
+                }
+
+                @for (int i = 0; i < 10; i++)
+                {
+                    string tooltipDirection = i == 0 ? "bottom" : "top";
+
+                    <div class="isp-item" name="@i">
+                        <span class="name">Asmuo @i</span>
+                        <span class="right">'1 nauja žinutė'</span>
+
+                        @if (ViewBag.Student)
+                        {
+                            <div class="vertical-line"></div>
+
+                            <div class="icons icons-count-1">
+
+                                <i class="fas fa-trash" data-toggle="tooltip" data-placement="@tooltipDirection" title="Ištrinti"></i>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <th>Grupiniai pokalbiai</th>
+    </tr>
+    <tr>
+        <td>
+            <div class="isp-item-list col">
+                @for (int i = 0; i < 10; i++)
+                {
+                    string tooltipDirection = i == 0 ? "bottom" : "top";
+                    bool registered = i % 2 == 0;
+
+                    <div class="isp-item" name="@i">
+                        <span class="name">Grupė @i</span>
+
+                        <span class="right">'3 neatidarytos žinutės'</span>
+                        <span class="right-secondary">'Grupės pavadinimas'</span>
+
+                        @if (ViewBag.Student)
+                        {
+                            <div class="vertical-line"></div>
+
+                            <div class="@(!ViewBag.Admin ? "icons icons-count-2" : "icons icons-count-3")">
+
+                                <i class="fas fa-plus" data-toggle="tooltip" data-placement="@tooltipDirection" title="Pridėti narį"></i>
+                                <i class="fas fa-minus" data-toggle="tooltip" data-placement="@tooltipDirection" title="Palikti grupę"></i>
+
+                                @if (ViewBag.Admin)
+                                {
+                                    <i class="fas fa-pen" data-toggle="tooltip" data-placement="@tooltipDirection" title="Redaguoti"></i>
+                                    <i class="fas fa-trash" data-toggle="tooltip" data-placement="@tooltipDirection" title="Ištrinti"></i>
+                                }
+
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </td>
+    </tr>
+</table>
+
+@section Scripts {
+    <script>
+        function deleteConfirmed() {
+            // Funkcija iskviecia kai patvirtintas istrynimas, reikia ajax requesto
+        }
+
+        function confirmed() {
+            // Funkcija iskviecia kai patvirtintas, reikia ajax requesto
+        }
+
+        function getEntryName(element) {
+            return $(element).closest(".isp-item").attr("name");
+        }
+
+        function deleteEntry(element) {
+            $("#modalEntryName").text(getEntryName(element));
+            $('#deleteEntryModal').modal();
+        }
+
+        function confirmAction(element, prompt, klass) {
+            $("#confirmModalButton").removeClass("btn-success")
+            $("#confirmModalButton").removeClass("btn-danger")
+            $("#confirmModalButton").addClass(klass)
+            $("#confirmModalPrompt").text(prompt);
+            $('#confirmEntryModal').modal();
+        }
+
+        function editEntry(element) {
+            requestInput(
+                "Redaguoti",
+                getEntryName(element),
+                "POKALBIO LANGAS",
+                "Grupės nariai",
+                function () {
+                    // Ajax
+                });
+        }
+
+        
+        function register(element) {
+            //confirmAction(element, "Ar tikrai norite pakviesti į grupę " + getEntryName(element) + "?", "btn-success")
+            requestInputMember(
+                "Pridėti narį",
+                "",
+                "",
+                "",
+                "Pridėti",
+                function () {
+                    // Ajax
+                });
+        }
+
+        function unregister(element) {
+            confirmAction(element, "Ar tikrai norite palikti " + getEntryName(element) + " grupę?", "btn-danger")
+        }
+
+        function requestInput(header, initialText1, initialText2, initialText3, btnText, clickcb) {
+            $("#textModalLabel").text(header);
+            $("#inputModalConfirm").text(btnText);
+            $("#inputModalConfirm").off("click");
+            $("#inputModalConfirm").click(clickcb);
+            $("#inputModalName").val(initialText1);
+            $("#inputModalTime").val(initialText2);
+            $("#inputModalDescription").val(initialText3);
+            $('#newEntryModal').modal();
+        }
+
+         function requestInputMember(header, initialText1, initialText2, initialText3, btnText, clickcb) {
+            $("#textModalLabel").text(header);
+            $("#inputModalConfirm").text(btnText);
+            $("#inputModalConfirm").off("click");
+            $("#inputModalConfirm").click(clickcb);
+            $("#viewModalName").val(initialText1);
+            $("#inputModalTime").val(initialText2);
+            $("#inputModalDescription").val(initialText3);
+            $('#newEntryModal').modal();
+        }
+
+
+
+
+        function newEntry() {
+            requestInput(
+                "Naujas pokalbis",
+                "",
+                "",
+                "",
+                "Rašyti žinutę",
+                function () {
+                });
+        }
+
+        function selectElement(element) {
+            $("#viewModalName").val(getEntryName(element));
+            $("#viewModalTime").val("08:24");
+            $("#viewModalDescription").val("POKALBIO LANGAS");
+            $('#viewEntryModal').modal();
+        }
+
+        $(document).ready(function () {
+            // Don't ask
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+
+            // Ištrinti
+            $(".isp-item").on('click', '.fa-trash', function (event) {
+                event.stopPropagation();
+                deleteEntry($(this));
+            });
+
+            // Redaguoti
+            $(".isp-item").on('click', '.fa-pen', function (event) {
+                event.stopPropagation();
+                editEntry($(this));
+            });
+
+            // Uzsiregistruoti
+            $(".isp-item").on('click', '.fa-plus', function (event) {
+                event.stopPropagation();
+                register($(this));
+            });
+
+            // Atsiregistruoti
+            $(".isp-item").on('click', '.fa-minus', function (event) {
+                event.stopPropagation();
+                unregister($(this));
+            });
+
+            // Sukurimas
+            $("#CreateChat").click(function (event) {
+                event.stopPropagation();
+                newEntry();
+            });
+
+            // Paspaudimas ant elemento
+            $(".isp-item-list").on("click", ".isp-item", function (event) {
+                event.stopPropagation();
+                selectElement($(this));
+            });
+        })
+    </script>
+}

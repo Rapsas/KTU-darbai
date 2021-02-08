@@ -1,0 +1,251 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@section Sidebar{
+    <a asp-area="" asp-controller="Komunikacija" asp-action="Mail">Paštas</a>
+    <a asp-area="" asp-controller="Komunikacija" asp-action="Chats">Pokalbiai</a>
+    <a class="active" asp-area="" asp-controller="Komunikacija" asp-action="Contacts">Kontaktai</a>
+}
+
+
+@section Modals{
+    <div class="modal fade" id="newEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="textModalLabel">Pervadinti</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- CIA VISI LAUKAI KURIE RODOMI PRIDEJIMO IR REDAGAVIMO METU, REIKES PAKEISTI requestInput FUNKCIJA -->
+                    <div class="input-group mb-3">
+                        <input id="inputModalName" type="text" class="form-control" placeholder="Vardas" aria-label="Kontakto vardas" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button id="inputModalConfirm" type="button" class="btn btn-success" data-dismiss="modal">Redaguoti</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Atšaukti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="viewEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewModalLabel">Peržiūra</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- CIA VISI LAUKAI TOKIE PATYS KAIP PRAITAM TIK VISI TURI disabled -->
+                    <div class="input-group mb-3">
+                        <input disabled id="viewModalName" type="text" class="form-control" placeholder="Vardas" aria-label="Kontakto vardas" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <textarea disabled id="viewModalContent" type="text" class="form-control" placeholder="Kontaktas" aria-label="Kontakto tekstas" aria-describedby="basic-addon1"></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Rašyti žinutę</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Uždaryti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<table class="table" style="width: 100%"
+
+
+    <tr>
+        <th>
+            Filtravimas:
+        </th>
+    </tr>
+    <tr>
+        <th class="isp" style="margin-bottom: 15px;">
+
+            <span class="name">
+@Html.TextArea("filterContacts", "", new { @class = "form-control" })
+            </span>
+        </th>
+    </tr>
+
+    <tr>
+        <th>Kontaktų sąrašas</th>
+    </tr>
+
+
+    <tr>
+        <td>
+            <div class="isp-item-list">
+@if (ViewBag.Student)
+{
+    <div class="isp-item" id="CreateContact" style="margin-bottom: 15px;">
+    <i class="fas fa-plus" style="color: #3c5c4a;"></i>
+    <span class="name">Naujas kontaktas</span>
+    </div>
+}
+
+@for (int i = 0; i < 10; i++)
+{
+    string tooltipDirection = i == 0 ? "bottom" : "top";
+
+    <div class="isp-item" name="@i">
+    <span class="name">Kontaktas @i</span>
+    <div class="vertical-line"></div>
+
+    @if (ViewBag.Student)
+    {
+        <div class="icons icons-count-2">
+        <i class="fas fa-pen" data-toggle="tooltip" data-placement="@tooltipDirection" title="Redaguoti"></i>
+
+        <i class="fas"></i>
+
+        <i class="fas fa-trash" data-toggle="tooltip" data-placement="@tooltipDirection" title="Ištrinti"></i>
+        </div>
+    }
+    </div>
+}
+            </div>
+        </td>
+    </tr>
+</table>
+
+@section Scripts {
+    <script>
+        function deleteConfirmed() {
+            // Funkcija iskviecia kai patvirtintas istrynimas, reikia ajax requesto
+        }
+
+        function getEntryName(element) {
+            return $(element).closest(".isp-item").attr("name");
+        }
+
+        function deleteEntry(element) {
+            $("#modalEntryName").text(getEntryName(element));
+            $('#deleteEntryModal').modal();
+        }
+
+        function editEntry(element) {
+            requestInput(
+                "Redaguoti",
+                getEntryName(element),
+                "Kontakto aprašymas",
+                "Redaguoti",
+                function () {
+                    // Ajax
+                });
+        }
+
+        function requestInput(header, initialText1, initialText2, btnText, clickcb) {
+            $("#textModalLabel").text(header);
+            $("#inputModalConfirm").text(btnText);
+            $("#inputModalConfirm").off("click");
+            $("#inputModalConfirm").click(clickcb);
+            $("#inputModalName").val(initialText1);
+            $("#inputModalContent").val(initialText2);
+            $('#newEntryModal').modal();
+        }
+
+        function newEntry() {
+            requestInput(
+                "Naujas kontaktas",
+                "",
+                "",
+                "",
+                "Pridėti",
+                function () {
+                });
+        }
+
+        function register(element) {
+            //confirmAction(element, "Ar tikrai norite pakviesti į grupę " + getEntryName(element) + "?", "btn-success")
+            requestInputMember(
+                "Rašyti laišką",
+                "",
+                "",
+                "",
+                "Pridėti",
+                function () {
+                    // Ajax
+                });
+        }
+
+        function requestInput(header, initialText1, initialText2, initialText3, btnText, clickcb) {
+            $("#textModalLabel").text(header);
+            $("#inputModalConfirm").text(btnText);
+            $("#inputModalConfirm").off("click");
+            $("#inputModalConfirm").click(clickcb);
+            $("#inputModalName").val(initialText1);
+            $("#inputModalTime").val(initialText2);
+            $("#inputModalDescription").val(initialText3);
+            $('#newEntryModal').modal();
+        }
+
+        function requestInputMember(header, initialText1, initialText2, initialText3, btnText, clickcb) {
+            $("#textModalLabel").text(header);
+            $("#inputModalConfirm").text(btnText);
+            $("#inputModalConfirm").off("click");
+            $("#inputModalConfirm").click(clickcb);
+            $("#viewModalName").val(initialText1);
+            $("#inputModalTime").val(initialText2);
+            $("#inputModalDescription").val(initialText3);
+            $('#newEntryModal').modal();
+        }
+
+        function unregister(element) {
+            confirmAction(element, "Ar tikrai norite palikti " + getEntryName(element) + " grupę?", "btn-danger")
+        }
+
+        function selectElement(element) {
+            $("#viewModalName").val(getEntryName(element));
+            $("#viewModalContent").val("Kontakto aprašymas");
+            $('#viewEntryModal').modal();
+        }
+
+        $(document).ready(function () {
+            // Don't ask
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+
+            // Ištrinti
+            $(".isp-item").on('click', '.fa-trash', function (event) {
+                event.stopPropagation();
+                deleteEntry($(this));
+            });
+
+            // Redaguoti
+            $(".isp-item").on('click', '.fa-pen', function (event) {
+                event.stopPropagation();
+                editEntry($(this));
+            });
+
+            // Sukurimas
+            $("#CreateContact").click(function (event) {
+                event.stopPropagation();
+                newEntry();
+            });
+
+            // Paspaudimas ant elemento
+            $(".isp-item-list").on("click", ".isp-item", function (event) {
+                event.stopPropagation();
+                selectElement($(this));
+            });
+        })
+    </script>
+}

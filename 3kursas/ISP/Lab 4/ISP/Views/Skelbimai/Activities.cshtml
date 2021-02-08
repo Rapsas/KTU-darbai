@@ -1,0 +1,735 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model Tuple<List<Mentor>, List<Activity>>
+
+@section Sidebar{
+    <a asp-area="" asp-controller="Skelbimai" asp-action="Messages">Skelbimai</a>
+    <a asp-area="" asp-controller="Skelbimai" asp-action="Notices">Oficialūs pranešimai</a>
+    <a asp-area="" asp-controller="Skelbimai" asp-action="Surveys">Apklausos</a>
+    <a class="active" asp-area="" asp-controller="Skelbimai" asp-action="Activities">Popaskaitinė veikla</a>
+}
+
+@section Modals{
+    <div class="modal fade" id="newEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="textModalLabel">Pervadinti</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- CIA VISI LAUKAI KURIE RODOMI PRIDEJIMO IR REDAGAVIMO METU, REIKES PAKEISTI requestInput FUNKCIJA -->
+                    <div id="inputSelectors">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="typeSelect1" type="radio" name="typeSelect" aria-label="Veiklos tipas" aria-describedby="basic-addon1">
+                            <label class="form-check-label" for="typeSelect1">
+                                Mentorystė
+                            </label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="typeSelect2" type="radio" name="typeSelect" aria-label="Veiklos tipas" aria-describedby="basic-addon1">
+                            <label class="form-check-label" for="typeSelect2">
+                                Kita
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input id="inputModalName" type="text" class="form-control" placeholder="Pavadinimas" aria-label="Veiklos pavadinimas" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input id="inputModalTime" type="datetime-local" class="form-control" placeholder="Laikas" aria-label="Veiklos laikas" aria-describedby="basic-addon1"></input>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <textarea id="inputModalDescription" type="text" class="form-control" placeholder="Apibūdinimas" aria-label="Veiklos apibūdinimas" aria-describedby="basic-addon1"></textarea>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input id="inputModalLocation" type="text" class="form-control" placeholder="Vieta" aria-label="Veiklos vieta" aria-describedby="basic-addon1"></input>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button id="inputModalConfirm" type="button" class="btn btn-success" data-dismiss="modal">Redaguoti</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Atšaukti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="viewEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewModalLabel">Peržiūra</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- CIA VISI LAUKAI TOKIE PATYS KAIP PRAITAM TIK VISI TURI disabled -->
+                    <div class="input-group mb-3">
+                        <input disabled id="viewModalName" type="text" class="form-control" placeholder="Pavadinimas" aria-label="Veiklos pavadinimas" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input disabled id="viewModalTime" type="datetime-local" class="form-control" placeholder="Laikas" aria-label="Veiklos laikas" aria-describedby="basic-addon1"></input>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <textarea disabled id="viewModalDescription" type="text" class="form-control" placeholder="Apibūdinimas" aria-label="Veiklos apibūdinimas" aria-describedby="basic-addon1"></textarea>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input disabled id="viewModalLocation" type="text" class="form-control" placeholder="Vieta" aria-label="Veiklos vieta" aria-describedby="basic-addon1"></input>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Uždaryti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<table class="table" style="width: 100%">
+    <tr>
+        <th>Mano vedama</th>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="isp-item-list col">
+                @if (ViewBag.Student)
+                {
+                    <div class="isp-item " id="CreateActivity" style="margin-bottom: 15px;">
+                        <i class="fas fa-plus" style="color: #3c5c4a;"></i>
+                        <span class="name">Nauja veikla</span>
+                    </div>
+                }
+
+                @{
+                    int it = 0;
+                    for (int i = 0; i < Model.Item1.Count; i++)
+                    {
+                        string tooltipDirection = it == 0 ? "bottom" : "top";
+
+                        if (!Model.Item1[i].IsCreator)
+                        {
+                            continue;
+                        }
+
+                        it++;
+
+                        <div class="isp-item isp-item-type-mentor" name="@Model.Item1[i].ID">
+                            <span hidden class="isp-item-id">@Model.Item1[i].ID</span>
+                            <span hidden class="isp-item-name">@Model.Item1[i].Name</span>
+                            <span hidden class="isp-item-subject">@Model.Item1[i].Subject</span>
+                            <span hidden class="isp-item-date">@Model.Item1[i].Date</span>
+                            <span hidden class="isp-item-location">@Model.Item1[i].Location</span>
+                            <span hidden class="isp-item-creator-id">@Model.Item1[i].CreatorID</span>
+                            <span hidden class="isp-item-creator-name">@Model.Item1[i].CreatorName</span>
+                            <span hidden class="isp-item-creator-surname">@Model.Item1[i].CreatorSurname</span>
+                            <span hidden class="isp-item-is-creator">@Model.Item1[i].IsCreator</span>
+                            <span hidden class="isp-item-is-enrolled">@Model.Item1[i].IsEnrolled</span>
+
+                            <span class="name">@Model.Item1[i].Name</span>
+                            <span class="right">@Model.Item1[i].Date</span>
+
+                            @if (ViewBag.Student)
+                            {
+                                <div class="vertical-line"></div>
+
+                                <div class="icons icons-count-2">
+                                    <i class="fas fa-pen" data-toggle="tooltip" data-placement="@tooltipDirection" title="Redaguoti"></i>
+
+                                    <i class="fas"></i>
+
+                                    <i class="fas fa-trash" data-toggle="tooltip" data-placement="@tooltipDirection" title="Ištrinti"></i>
+                                </div>
+                            }
+                        </div>
+                    }
+
+                    for (int i = 0; i < Model.Item2.Count; i++)
+                    {
+                        string tooltipDirection = it == 0 ? "bottom" : "top";
+
+                        if (!Model.Item2[i].IsCreator)
+                        {
+                            continue;
+                        }
+
+                        it++;
+
+                        <div class="isp-item isp-item-type-activity" name="@Model.Item2[i].ID">
+                            <span hidden class="isp-item-id">@Model.Item2[i].ID</span>
+                            <span hidden class="isp-item-name">@Model.Item2[i].Name</span>
+                            <span hidden class="isp-item-description">@Model.Item2[i].Description</span>
+                            <span hidden class="isp-item-date">@Model.Item2[i].Date</span>
+                            <span hidden class="isp-item-location">@Model.Item2[i].Location</span>
+                            <span hidden class="isp-item-creator-id">@Model.Item2[i].CreatorID</span>
+                            <span hidden class="isp-item-creator-name">@Model.Item2[i].CreatorName</span>
+                            <span hidden class="isp-item-creator-surname">@Model.Item2[i].CreatorSurname</span>
+                            <span hidden class="isp-item-is-creator">@Model.Item2[i].IsCreator</span>
+                            <span hidden class="isp-item-is-enrolled">@Model.Item2[i].IsEnrolled</span>
+
+                            <span class="name">@Model.Item2[i].Name</span>
+                            <span class="right">@Model.Item2[i].Date</span>
+
+                            @if (ViewBag.Student)
+                            {
+                                <div class="vertical-line"></div>
+
+                                <div class="icons icons-count-2">
+                                    <i class="fas fa-pen" data-toggle="tooltip" data-placement="@tooltipDirection" title="Redaguoti"></i>
+
+                                    <i class="fas"></i>
+
+                                    <i class="fas fa-trash" data-toggle="tooltip" data-placement="@tooltipDirection" title="Ištrinti"></i>
+                                </div>
+                            }
+                        </div>
+                    }
+                }
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <th>Mentoriai</th>
+    </tr>
+    <tr>
+        <td>
+            <div class="isp-item-list col">
+                @{ 
+                    it = 0;
+                    for (int i = 0; i < Model.Item1.Count; i++)
+                    {
+                        string tooltipDirection = it == 0 ? "bottom" : "top";
+
+                        if (Model.Item1[i].IsCreator)
+                        {
+                            continue;
+                        }
+
+                        it++;
+
+                        <div class="isp-item isp-item-type-mentor" name="@Model.Item1[i].ID">
+                            <span hidden class="isp-item-id">@Model.Item1[i].ID</span>
+                            <span hidden class="isp-item-name">@Model.Item1[i].Name</span>
+                            <span hidden class="isp-item-subject">@Model.Item1[i].Subject</span>
+                            <span hidden class="isp-item-date">@Model.Item1[i].Date</span>
+                            <span hidden class="isp-item-location">@Model.Item1[i].Location</span>
+                            <span hidden class="isp-item-creator-id">@Model.Item1[i].CreatorID</span>
+                            <span hidden class="isp-item-creator-name">@Model.Item1[i].CreatorName</span>
+                            <span hidden class="isp-item-creator-surname">@Model.Item1[i].CreatorSurname</span>
+                            <span hidden class="isp-item-is-creator">@Model.Item1[i].IsCreator</span>
+                            <span hidden class="isp-item-is-enrolled">@Model.Item1[i].IsEnrolled</span>
+
+                            <span class="name">@Model.Item1[i].Name</span>
+
+                            <span class="right">@Model.Item1[i].Date</span>
+                            <span class="right-secondary">@Model.Item1[i].CreatorName @Model.Item1[i].CreatorSurname</span>
+
+                            @if (ViewBag.Student)
+                            {
+                                <div class="vertical-line"></div>
+
+                                <div class="@(!ViewBag.Admin ? "icons icons-count-1" : "icons icons-count-3")">
+                                    @if (!@Model.Item1[i].IsEnrolled)
+                                    {
+                                        <i class="fas fa-plus" data-toggle="tooltip" data-placement="@tooltipDirection" title="Užsiregistruoti"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="fas fa-minus" data-toggle="tooltip" data-placement="@tooltipDirection" title="Išsiregistruoti"></i>
+                                    }
+
+                                    @if (ViewBag.Admin)
+                                    {
+                                        <i class="fas fa-pen" data-toggle="tooltip" data-placement="@tooltipDirection" title="Redaguoti"></i>
+                                        <i class="fas fa-trash" data-toggle="tooltip" data-placement="@tooltipDirection" title="Ištrinti"></i>
+                                    }
+
+                                </div>
+                            }
+                        </div>
+                    }
+                }
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <th>Papildoma veikla</th>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="isp-item-list col">
+                @{
+                    it = 0;
+                    for (int i = 0; i < @Model.Item2.Count; i++)
+                    {
+                        string tooltipDirection = it == 0 ? "bottom" : "top";
+
+                        if (Model.Item2[i].IsCreator)
+                        {
+                            continue;
+                        }
+
+                        it++;
+
+                        <div class="isp-item isp-item-type-activity" name="@Model.Item2[i].ID">
+                            <span hidden class="isp-item-id">@Model.Item2[i].ID</span>
+                            <span hidden class="isp-item-name">@Model.Item2[i].Name</span>
+                            <span hidden class="isp-item-description">@Model.Item2[i].Description</span>
+                            <span hidden class="isp-item-date">@Model.Item2[i].Date</span>
+                            <span hidden class="isp-item-location">@Model.Item2[i].Location</span>
+                            <span hidden class="isp-item-creator-id">@Model.Item2[i].CreatorID</span>
+                            <span hidden class="isp-item-creator-name">@Model.Item2[i].CreatorName</span>
+                            <span hidden class="isp-item-creator-surname">@Model.Item2[i].CreatorSurname</span>
+                            <span hidden class="isp-item-is-creator">@Model.Item2[i].IsCreator</span>
+                            <span hidden class="isp-item-is-enrolled">@Model.Item2[i].IsEnrolled</span>
+
+                            <span class="name">@Model.Item2[i].Name</span>
+
+                            <span class="right">@Model.Item2[i].Date</span>
+
+                            @if (ViewBag.Student)
+                            {
+                                <div class="vertical-line"></div>
+
+                                <div class="@(!ViewBag.Admin ? "icons icons-count-1" : "icons icons-count-3")">
+
+                                    @if (!Model.Item2[i].IsEnrolled)
+                                    {
+                                        <i class="fas fa-plus" data-toggle="tooltip" data-placement="@tooltipDirection" title="Užsiregistruoti"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="fas fa-minus" data-toggle="tooltip" data-placement="@tooltipDirection" title="Išsiregistruoti"></i>
+                                    }
+
+                                    @if (ViewBag.Admin)
+                                    {
+                                        <i class="fas fa-pen" data-toggle="tooltip" data-placement="@tooltipDirection" title="Redaguoti"></i>
+                                        <i class="fas fa-trash" data-toggle="tooltip" data-placement="@tooltipDirection" title="Ištrinti"></i>
+                                    }
+
+                                </div>
+                            }
+                        </div>
+                    }
+                }
+            </div>
+        </td>
+    </tr>
+</table>
+
+@section Scripts {
+    <script>
+        var selectedElement = null
+        var registerAction = null
+
+        function deleteConfirmed() {
+            // Funkcija iskviecia kai patvirtintas istrynimas, reikia ajax requesto
+            if (selectedElement.type === "Mentor") {
+                fetch("@Url.Action("DeleteMentor", "Skelbimai")", {
+                    method: "post",
+                    headers: { 'Content-Type': 'application/json' },
+                    body: entryToJSON(selectedElement)
+                }).then(response => {
+                    if (response.status !== 200) {
+                        // Error
+                    } else {
+                        // Add element
+                        location.reload(true);
+                    }
+                })
+            } else if (selectedElement.type === "Activity") {
+                fetch("@Url.Action("DeleteActivity", "Skelbimai")", {
+                    method: "post",
+                    headers: { 'Content-Type': 'application/json' },
+                    body: entryToJSON(selectedElement)
+                }).then(response => {
+                    if (response.status !== 200) {
+                        // Error
+                    } else {
+                        // Add element
+                        location.reload(true);
+                    }
+                })
+            }
+        }
+
+        function confirmed() {
+            if (registerAction === true) {
+                if (selectedElement.type === "Mentor") {
+                    fetch("@Url.Action("RegisterMentor", "Skelbimai")", {
+                        method: "post",
+                        headers: { 'Content-Type': 'application/json' },
+                        body: entryToJSON(selectedElement)
+                    }).then(response => {
+                        if (response.status !== 200) {
+                            // Error
+                        } else {
+                            // Add element
+                            location.reload(true);
+                        }
+                    })
+                } else if (selectedElement.type === "Activity") {
+                    fetch("@Url.Action("RegisterActivity", "Skelbimai")", {
+                        method: "post",
+                        headers: { 'Content-Type': 'application/json' },
+                        body: entryToJSON(selectedElement)
+                    }).then(response => {
+                        if (response.status !== 200) {
+                            // Error
+                        } else {
+                            // Add element
+                            location.reload(true);
+                        }
+                    })
+                }
+            } else {
+                if (selectedElement.type === "Mentor") {
+                    fetch("@Url.Action("UnregisterMentor", "Skelbimai")", {
+                        method: "post",
+                        headers: { 'Content-Type': 'application/json' },
+                        body: entryToJSON(selectedElement)
+                    }).then(response => {
+                        if (response.status !== 200) {
+                            // Error
+                        } else {
+                            // Add element
+                            location.reload(true);
+                        }
+                    })
+                } else if (selectedElement.type === "Activity") {
+                    fetch("@Url.Action("UnregisterActivity", "Skelbimai")", {
+                        method: "post",
+                        headers: { 'Content-Type': 'application/json' },
+                        body: entryToJSON(selectedElement)
+                    }).then(response => {
+                        if (response.status !== 200) {
+                            // Error
+                        } else {
+                            // Add element
+                            location.reload(true);
+                        }
+                    })
+                }
+            }
+        }
+
+        function getItem(element) {
+            return $(element).closest(".isp-item");
+        }
+
+        function getAsObject(element) {
+            let item = getItem(element);
+
+            let type = item.hasClass("isp-item-type-activity") === true ? "Activity" : "Mentor"
+            let id = parseInt(item.find(".isp-item-id").text());
+            let date = item.find(".isp-item-date").text();
+            let name = item.find(".isp-item-name").text();
+            let creator = item.find(".isp-item-creator-id").text();
+            let creatorName = item.find(".isp-item-creator-name").text();
+            let creatorSurname = item.find(".isp-item-creator-surname").text();
+            let isCreator = item.find(".isp-item-is-creator").text() === "True";
+            let isEnrolled = item.find(".isp-item-is-enrolled").text() === "True";
+            let location = item.find(".isp-item-location").text();
+
+            if (type === "Activity") {
+                let description = item.find(".isp-item-description").text();
+                return {
+                    id: id,
+                    name: name,
+                    description: description,
+                    date: date,
+                    location: location,
+                    creator: creator,
+                    creatorName: creatorName,
+                    creatorSurname: creatorSurname,
+                    isCreator: isCreator,
+                    isEnrolled: isEnrolled,
+                    type: type
+                }
+            } else if (type === "Mentor") {
+                let subject = item.find(".isp-item-subject").text();
+                return {
+                    id: id,
+                    name: name,
+                    subject: subject,
+                    date: date,
+                    location: location,
+                    creator: creator,
+                    creatorName: creatorName,
+                    creatorSurname: creatorSurname,
+                    isCreator: isCreator,
+                    isEnrolled: isEnrolled,
+                    type: type
+                }
+            }
+        }
+
+        function entryToJSON(element) {
+            if (element.type === "Activity") {
+                return JSON.stringify({
+                    ID: element.id,
+                    Name: element.name,
+                    Description: element.description,
+                    Date: element.date,
+                    Location: element.location,
+                    IsCreator: element.isCreator,
+                    IsEnrolled: element.isEnrolled,
+                    CreatorID: element.creator,
+                    CreatorName: element.creatorName,
+                    CreatorSurname: element.creatorSurname,
+                })
+            } else if (element.type === "Mentor") {
+                return JSON.stringify({
+                    ID: element.id,
+                    Name: element.name,
+                    Subject: element.subject,
+                    Date: element.date,
+                    Location: element.location,
+                    IsCreator: element.isCreator,
+                    IsEnrolled: element.isEnrolled,
+                    CreatorID: element.creator,
+                    CreatorName: element.creatorName,
+                    CreatorSurname: element.creatorSurname,
+                })
+            }
+        }
+
+        function deleteEntry(element) {
+            selectedElement = getAsObject(element);
+            $("#modalEntryName").text(selectedElement.name);
+            $('#deleteEntryModal').modal();
+        }
+
+        function confirmAction(element, prompt, klass) {
+            $("#confirmModalButton").removeClass("btn-success")
+            $("#confirmModalButton").removeClass("btn-danger")
+            $("#confirmModalButton").addClass(klass)
+            $("#confirmModalPrompt").text(prompt);
+            $('#confirmEntryModal').modal();
+        }
+
+        function editEntry(element) {
+            selectedElement = getAsObject(element);
+
+            requestInput(
+                "Redaguoti",
+                selectedElement.name,
+                selectedElement.date,
+                selectedElement.type === "Activity" ? selectedElement.description : selectedElement.subject,
+                selectedElement.location,
+                "Redaguoti",
+                false,
+                function () {
+                    if (selectedElement.type === "Mentor") {
+                        selectedElement.name = $("#inputModalName").val();
+                        selectedElement.date = $("#inputModalTime").val();
+                        selectedElement.subject = $("#inputModalDescription").val();
+                        selectedElement.location = $("#inputModalLocation").val();
+
+                        fetch("@Url.Action("EditMentor", "Skelbimai")", {
+                            method: "post",
+                            headers: { 'Content-Type': 'application/json' },
+                            body: entryToJSON(selectedElement)
+                        }).then(response => {
+                            if (response.status !== 200) {
+                                // Error
+                            } else {
+                                // Add element
+                                location.reload(true);
+                            }
+                        })
+                    } else if (selectedElement.type === "Activity") {
+                        selectedElement.name = $("#inputModalName").val();
+                        selectedElement.date = $("#inputModalTime").val();
+                        selectedElement.description = $("#inputModalDescription").val();
+                        selectedElement.location = $("#inputModalLocation").val();
+
+                        fetch("@Url.Action("EditActivity", "Skelbimai")", {
+                            method: "post",
+                            headers: { 'Content-Type': 'application/json' },
+                            body: entryToJSON(selectedElement)
+                        }).then(response => {
+                            if (response.status !== 200) {
+                                // Error
+                            } else {
+                                // Add element
+                                location.reload(true);
+                            }
+                        })
+                    }
+                });
+        }
+
+        function register(element) {
+            selectedElement = getAsObject(element);
+            registerAction = true;
+            confirmAction(element, "Ar tikrai norite užsiregistruoti į veiklą " + selectedElement.name + "?", "btn-success")
+        }
+
+        function unregister(element) {
+            selectedElement = getAsObject(element);
+            registerAction = false;
+            confirmAction(element, "Ar tikrai norite išsiregistruoti iš " + selectedElement.name + " veiklos?", "btn-danger")
+        }
+
+        function requestInput(header, initialText1, initialText2, initialText3, initialText4, btnText, selectVisible, clickcb) {
+            $("#textModalLabel").text(header);
+            $("#inputModalConfirm").text(btnText);
+            $("#inputModalConfirm").off("click");
+            $("#inputModalConfirm").click(clickcb);
+            $("#inputModalName").val(initialText1);
+
+            if (initialText2 !== "") {
+                $("#inputModalTime").val(new Date(new Date(initialText2) - new Date().getTimezoneOffset() * 60000).toJSON().slice(0, 19));
+            } else {
+                $("#inputModalTime").val("");
+            }
+
+            $("#inputModalDescription").val(initialText3);
+            $("#inputModalLocation").val(initialText4);
+
+            if (selectVisible) {
+                $('#inputSelectors').show();
+            } else {
+                $('#inputSelectors').hide();
+            }
+
+            $('#newEntryModal').modal();
+        }
+
+        function newEntry() {
+            requestInput(
+                "Nauja veikla",
+                "",
+                "",
+                "",
+                "",
+                "Sukurti",
+                true,
+                function () {
+                    let mentor = $("#typeSelect1").prop("checked");
+
+                    if (mentor) {
+                        fetch("@Url.Action("NewMentor", "Skelbimai")", {
+                            method: "post",
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                Name: JSON.stringify($("#inputModalName").val()),
+                                Date: JSON.stringify($("#inputModalTime").val()),
+                                Subject: JSON.stringify($("#inputModalDescription").val()),
+                                Location: JSON.stringify($("#inputModalLocation").val()),
+                            })
+                        }).then(response => {
+                            if (response.status !== 200) {
+                                // Error
+                            } else {
+                                // Add element
+                                location.reload(true);
+                            }
+                        })
+                    } else {
+                        fetch("@Url.Action("NewActivity", "Skelbimai")", {
+                            method: "post",
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                Name: JSON.stringify($("#inputModalName").val()),
+                                Date: JSON.stringify($("#inputModalTime").val()),
+                                Description: JSON.stringify($("#inputModalDescription").val()),
+                                Location: JSON.stringify($("#inputModalLocation").val()),
+                            })
+                        }).then(response => {
+                            if (response.status !== 200) {
+                                // Error
+                            } else {
+                                // Add element
+                                location.reload(true);
+                            }
+                        })
+                    }
+                });
+        }
+
+        function selectElement(element) {
+            selectedElement = getAsObject(element);
+            $("#viewModalName").val(selectedElement.name);
+
+            if (selectedElement.date !== "") {
+                $("#viewModalTime").val(new Date(new Date(selectedElement.date) - new Date().getTimezoneOffset() * 60000).toJSON().slice(0, 19));
+            } else {
+                $("#viewModalTime").val("");
+            }
+
+            $("#viewModalDescription").val(selectedElement.type === "Activity" ? selectedElement.description : selectedElement.subject);
+            $("#viewModalLocation").val(selectedElement.location);
+            
+            $('#viewEntryModal').modal();
+        }
+
+        $(document).ready(function () {
+            // Don't ask
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+
+            // Ištrinti
+            $(".isp-item").on('click', '.fa-trash', function (event) {
+                event.stopPropagation();
+                deleteEntry($(this));
+            });
+
+            // Redaguoti
+            $(".isp-item").on('click', '.fa-pen', function (event) {
+                event.stopPropagation();
+                editEntry($(this));
+            });
+
+            // Uzsiregistruoti
+            $(".isp-item").on('click', '.fa-plus', function (event) {
+                event.stopPropagation();
+                register($(this));
+            });
+
+            // Atsiregistruoti
+            $(".isp-item").on('click', '.fa-minus', function (event) {
+                event.stopPropagation();
+                unregister($(this));
+            });
+
+            // Sukurimas
+            $("#CreateActivity").click(function (event) {
+                event.stopPropagation();
+                newEntry();
+            });
+
+            // Paspaudimas ant elemento
+            $(".isp-item-list").on("click", ".isp-item", function (event) {
+                event.stopPropagation();
+                selectElement($(this));
+            });
+        })
+    </script>
+}

@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">GRAPE</h1>
+
+    <div style="display: inline-table">
+        <div class="input-group mb-3">
+            <input id="loginName" type="text" class="form-control" placeholder="Asmens kodas" aria-label="Asmens kodas" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+            <input id="loginPassword" type="password" class="form-control" placeholder="Slaptažodis" aria-label="Slaptažodis" aria-describedby="basic-addon1">
+        </div>
+
+        <button id="logged-in" type="submit" class="btn btn-link text-dark btn-outline-success">Prisijungti</button>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Ištrinti
+            $("#logged-in").on('click', function (event) {
+                event.stopPropagation();
+
+                fetch("@Url.Action("LoginAction", "Login")", {
+                        method: "post",
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            PersonalCode: JSON.stringify($("#loginName").val()),
+                            Password: JSON.stringify($("#loginPassword").val())
+                        })
+                    }).then(response => {
+                        if (response.status !== 200) {
+                            // Error
+                        } else {
+                            // Add element
+                            $(location).attr('href', "@Url.Action("Index", "Skelbimai")")
+                        }
+                    })
+            });
+        })
+    </script>
+}
